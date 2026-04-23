@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reader</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        /* Simplified layout styles for avraham.html */
+        .main-container {
+            display: flex;
+            height: 100vh;
+        }
+        #left-panel {
+            width: 100% !important;
+            flex: 1;
+        }
+        .bible-reader-container {
+            display: flex;
+            height: 100%;
+        }
+        .nav-column {
+            flex: 0 0 auto;
+        }
+        .iframe-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .iframe-controls {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            gap: 10px;
+        }
+        /* Audio Player Styles */
+        .audio-player-container {
+            position: absolute;
+            top: 4px;
+            right: 10px;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+            pointer-events: none;
+        }
+        .audio-player-icon {
+            width: 32px;
+            height: 32px;
+            border: none;
+            background: rgba(255, 255, 255, 0.95);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+            padding: 4px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            transition: background 0.2s;
+            flex-shrink: 0;
+            pointer-events: auto;
+        }
+        .audio-player-icon:hover {
+            background: rgba(255, 255, 255, 1);
+        }
+        .audio-player-controls {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding: 12px;
+            min-width: 300px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            margin-right: 8px;
+            transform: translateX(100%);
+            opacity: 0;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            pointer-events: none;
+        }
+        .audio-player-controls.show {
+            transform: translateX(0);
+            opacity: 1;
+            pointer-events: auto;
+        }
+        .audio-controls-main {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .audio-btn {
+            width: 36px;
+            height: 36px;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+            border-radius: 6px;
+            transition: background 0.2s;
+            flex-shrink: 0;
+        }
+        .audio-btn-primary {
+            background: rgba(0, 0, 0, 0.05);
+        }
+        .audio-btn:hover {
+            background: rgba(0, 0, 0, 0.1);
+        }
+        .audio-btn:active {
+            background: rgba(0, 0, 0, 0.2);
+        }
+        .audio-progress-container {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex: 1;
+            min-width: 0;
+        }
+        .audio-time {
+            font-size: 12px;
+            color: #666;
+            font-variant-numeric: tabular-nums;
+            flex-shrink: 0;
+        }
+        .audio-progress {
+            flex: 1;
+            height: 4px;
+            border-radius: 2px;
+            background: #ddd;
+            outline: none;
+            cursor: pointer;
+            -webkit-appearance: none;
+            appearance: none;
+        }
+        .audio-progress::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #333;
+            cursor: pointer;
+        }
+        .audio-progress::-moz-range-thumb {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #333;
+            cursor: pointer;
+            border: none;
+        }
+        .audio-progress:hover::-webkit-slider-thumb {
+            background: #000;
+        }
+        .audio-progress:hover::-moz-range-thumb {
+            background: #000;
+        }
+    </style>
+    <script type="text/javascript" src="scripts/avraham.js"></script>
+    <script>
+        // Prevent JS errors for missing elements in simplified version
+        // This must run before avraham.js initializes
+        document.addEventListener('DOMContentLoaded', function() {
+            const createDummyElement = (id, tag = 'div') => {
+                if (document.getElementById(id)) return;
+                const elem = document.createElement(tag);
+                elem.id = id;
+                elem.style.display = 'none';
+                // Set default values for form elements
+                if (tag === 'button') {
+                    elem.disabled = false;
+                } else if (tag === 'input' || tag === 'select' || tag === 'textarea') {
+                    elem.value = tag === 'input' ? '10' : (tag === 'select' ? '' : '[]');
+                }
+                document.body.appendChild(elem);
+                return elem;
+            };
+            
+            // Create dummy elements that JS expects but we removed
+            // Panel toggles and structure
+            createDummyElement('left-panel-toggle', 'button');
+            createDummyElement('right-panel-toggle', 'button');
+            createDummyElement('resizer');
+            createDummyElement('right-panel');
+            
+            // Verse selection elements
+            createDummyElement('verse-selection-column');
+            createDummyElement('clear-all-btn', 'button');
+            createDummyElement('verse-close-btn', 'button');
+            createDummyElement('verse-list');
+            createDummyElement('select-all-btn', 'button');
+            
+            // Full screen button
+            createDummyElement('fullscreen-btn', 'button');
+            
+            // Search interface elements
+            createDummyElement('search_button', 'button');
+            createDummyElement('model_name', 'select');
+            createDummyElement('record_level', 'select');
+            createDummyElement('top_k', 'input');
+            createDummyElement('search_verses', 'textarea');
+            createDummyElement('clear_verses_button', 'button');
+            createDummyElement('results_container');
+        });
+    </script>
+</head>
+<body>
+    <div class="main-container">
+        <!-- Left side: Bible Reader -->
+        <div class="left-panel" id="left-panel">
+            <div class="bible-reader-container">
+                <!-- Navigation Column -->
+                <div class="nav-column" id="nav-column">
+                    <div class="nav-header">
+                        <span>&nbsp;</span>
+                        <button class="mobile-close-btn" id="nav-close-btn" style="display: none;">×</button>
+                    </div>
+                    <div class="nav-list" id="nav-list">
+                        <!-- Populated by JavaScript -->
+                    </div>
+                </div>
+                
+                <!-- Iframe Column -->
+                <div class="iframe-column">
+                    <div class="iframe-controls">
+                        <button id="hamburger-btn" class="hamburger-btn" style="display: none;" title="Show navigation">☰</button>
+                        <div style="flex: 1; display: flex; justify-content: space-between; gap: 10px; align-items: center;">
+                            <button id="prev-btn" class="nav-btn">← Previous</button>
+                            <button id="next-btn" class="nav-btn">Next →</button>
+                        </div>
+                    </div>
+                    <div style="position: relative; flex: 1; overflow: hidden;">
+                        <iframe 
+                            id="bible-visual-iframe"
+                            src="https://bibleproject-genesis-one.web.app/"
+                            style="width: 100%; height: 100%; border: none;">
+                        </iframe>
+                        <!-- Audio Player -->
+                        <div id="audio-player-container" class="audio-player-container">
+                            <!-- Collapsed Icon -->
+                            <button id="audio-player-toggle" class="audio-player-icon" title="Audio Tour Guide">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                    <path d="M560-131v-82q90-26 145-100t55-168q0-94-55-168T560-749v-82q124 28 202 125.5T840-481q0 127-78 224.5T560-131ZM120-360v-240h160l200-200v640L280-360H120Zm440 40v-322q47 22 73.5 66t26.5 96q0 51-26.5 94.5T560-320ZM400-606l-86 86H200v80h114l86 86v-252ZM300-480Z"/>
+                                </svg>
+                            </button>
+                            <!-- Expanded Controls -->
+                            <div id="audio-player-controls" class="audio-player-controls">
+                                <audio id="audio-player" preload="metadata"></audio>
+                                <div class="audio-controls-main">
+                                    <button id="audio-play-pause" class="audio-btn audio-btn-primary" title="Play/Pause">
+                                        <svg id="play-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M8 5v14l11-7z"/>
+                                        </svg>
+                                        <svg id="pause-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+                                            <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/>
+                                        </svg>
+                                    </button>
+                                    <button id="audio-jump-back-10" class="audio-btn" title="Jump Back 10 Seconds">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#888">
+                                            <path d="M480-80q-75 0-140.5-28.5t-114-77q-48.5-48.5-77-114T120-440h80q0 117 81.5 198.5T480-160q117 0 198.5-81.5T760-440q0-117-81.5-198.5T480-720h-6l62 62-56 58-160-160 160-160 56 58-62 62h6q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-440q0 75-28.5 140.5t-77 114q-48.5 48.5-114 77T480-80ZM360-320v-180h-60v-60h120v240h-60Zm140 0q-17 0-28.5-11.5T460-360v-160q0-17 11.5-28.5T500-560h80q17 0 28.5 11.5T620-520v160q0 17-11.5 28.5T580-320h-80Zm20-60h40v-120h-40v120Z"/>
+                                        </svg>
+                                    </button>
+                                    <div class="audio-progress-container">
+                                        <span id="audio-current-time" class="audio-time">0:00</span>
+                                        <input type="range" id="audio-progress" class="audio-progress" min="0" max="100" value="0" step="0.1">
+                                        <span id="audio-duration" class="audio-time">0:00</span>
+                                    </div>
+                                    <button id="audio-jump-to-section" class="audio-btn" title="Jump to current section">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="currentColor">
+                                            <path d="m436-320 164-440h80l164 440h-76l-40-112H552l-40 112h-76Zm138-176h132l-64-182h-4l-64 182ZM240-160 100-300l56-56 44 42v-526h80v526l44-42 56 56-140 140Z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
