@@ -3,12 +3,12 @@ html {
   scroll-padding-top: 70px;
 }
 
-
 /* Layout */
 .gm-page-wrap {
   display: flex;
   margin-top: 60px;
   min-height: calc(100vh - 60px);
+  width: 100%;
 }
 
 /* Sidebar */
@@ -73,13 +73,13 @@ html {
 /* Main content */
 .gm-content {
   flex: 1;
-  min-width: 0;
+  
   background: white;
   padding: 40px 60px 80px;
   max-width: 860px;
   margin-left: auto;
   margin-right: auto;
-}
+} 
 
 /* Google Doc content overrides */
 
@@ -238,7 +238,7 @@ html {
   align-items: center;
   gap: 6px;
   flex: 1;
-  min-width: 0;
+  
 }
 
 .gm-audio-time {
@@ -312,7 +312,7 @@ html {
     left: 0;
     height: 100vh;
     width: 300px;
-    min-width: 0;
+    
     z-index: 400;
     transform: translateX(-100%);
     transition: transform 0.28s ease;
@@ -333,5 +333,9 @@ html {
   .gm-content {
     max-width: none;
     padding: 20px 15px 40px;
+  }
+
+  .gdoc-content {
+    zoom: 1;
   }
 }
