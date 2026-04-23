@@ -328,3 +328,10 @@ html {
     padding: 24px 20px 60px;
   }
 }
+
+@media (max-width: 800px) {
+  .gm-content {
+    max-width: none;
+    padding: 20px 15px 40px;
+  }
+}
