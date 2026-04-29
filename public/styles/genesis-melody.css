@@ -115,6 +115,18 @@ html {
   max-width: 100%;
 }
 
+/* Bibliography: single-spaced, no gaps between items */
+#bibliography-list li {
+  line-height: 1.3 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Gen 5 genealogy block: extra compact */
+#gen5-genealogy p {
+  line-height: 1.2 !important;
+}
+
 .gdoc-content table {
   width: 100%;
   margin-left: auto;
