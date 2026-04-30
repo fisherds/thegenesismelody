@@ -127,6 +127,19 @@ html {
   line-height: 1.2 !important;
 }
 
+/* Read-along highlight — active cue while audio is playing */
+.gm-reading {
+  background: #fef9c3;
+  border-radius: 4px;
+  box-shadow: 0 0 0 3px #fef08a;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+/* Slightly different treatment inside scripture cards */
+.scripture-block .gm-reading {
+  background: #fef3c7;
+  box-shadow: 0 0 0 2px #fde68a;
+}
+
 .gdoc-content table {
   width: 100%;
   margin-left: auto;
