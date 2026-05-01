@@ -129,15 +129,29 @@ html {
 
 /* Read-along highlight — active cue while audio is playing */
 .gm-reading {
-  background: #fef9c3;
+  background: #ede6b4;
   border-radius: 4px;
-  box-shadow: 0 0 0 3px #fef08a;
+  box-shadow: 0 0 0 3px #ede6b4;
   transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 /* Slightly different treatment inside scripture cards */
 .scripture-block .gm-reading {
-  background: #fef3c7;
-  box-shadow: 0 0 0 2px #fde68a;
+  background: #ede6b4;
+  box-shadow: 0 0 0 2px #ede6b4;
+}
+
+/* Dim-all effect: fade non-highlighted text when a cue is active.
+   Uses color (not opacity) so the active span can independently restore
+   its own color without the compounding-opacity problem. */
+main * {
+  transition: color 0.3s ease;
+}
+main.gm-reading-active * {
+  color: rgba(0,0,0,0.65) !important;
+}
+main.gm-reading-active .gm-reading,
+main.gm-reading-active .gm-reading * {
+  color: rgba(0,0,0,0.87) !important;
 }
 
 .gdoc-content table {

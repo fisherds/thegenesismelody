@@ -3,6 +3,7 @@
 
   let cues = [];
   let currentCue = null;
+  let mainEl = null;
 
   // Build sorted cue list from elements annotated by the pre-processing script
   function buildCues() {
@@ -31,8 +32,12 @@
     if (cue === currentCue) return;
     if (currentCue) currentCue.el.classList.remove('gm-reading');
     currentCue = cue;
-    if (!cue) return;
+    if (!cue) {
+      if (mainEl) mainEl.classList.remove('gm-reading-active');
+      return;
+    }
     cue.el.classList.add('gm-reading');
+    if (mainEl) mainEl.classList.add('gm-reading-active');
 
     // Scroll into view if outside the visible area (accounting for fixed navbar)
     const rect = cue.el.getBoundingClientRect();
@@ -45,9 +50,11 @@
   function clearHighlight() {
     if (currentCue) currentCue.el.classList.remove('gm-reading');
     currentCue = null;
+    if (mainEl) mainEl.classList.remove('gm-reading-active');
   }
 
   document.addEventListener('DOMContentLoaded', function () {
+    mainEl = document.querySelector('main');
     buildCues();
     if (!cues.length) return;
 
