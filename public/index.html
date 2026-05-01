@@ -15,45 +15,9 @@
 <nav class="navbar navbar-dark fixed-top">
 <button aria-label="Open contents" class="gm-hamburger" id="gm-hamburger">☰</button>
 <a class="navbar-brand" href="index.html">The Genesis Melody</a>
+<audio id="gm-audio" class="gm-audio-native" controls preload="metadata" src="audio/TheGenesisMelody.m4a"></audio>
 </nav>
 <div class="gm-toc-overlay" id="gm-toc-overlay"></div>
-<!-- Audio Player (fixed top-right) -->
-<div class="gm-audio-wrap" id="gm-audio-wrap">
-<button class="gm-audio-icon" id="gm-audio-toggle" title="Audio Reading">
-<svg fill="currentColor" height="22px" viewbox="0 -960 960 960" width="22px" xmlns="http://www.w3.org/2000/svg">
-<path d="M560-131v-82q90-26 145-100t55-168q0-94-55-168T560-749v-82q124 28 202 125.5T840-481q0 127-78 224.5T560-131ZM120-360v-240h160l200-200v640L280-360H120Zm440 40v-322q47 22 73.5 66t26.5 96q0 51-26.5 94.5T560-320ZM400-606l-86 86H200v80h114l86 86v-252ZM300-480Z"></path>
-</svg>
-</button>
-<div class="gm-audio-panel" id="gm-audio-panel">
-<audio id="gm-audio" preload="metadata" src="audio/TheGenesisMelody.m4a"></audio>
-<div class="gm-audio-section-label" id="gm-audio-section-label">A Quick Foreword</div>
-<div class="gm-audio-controls">
-<button class="gm-audio-btn gm-audio-btn-primary" id="gm-play-pause" title="Play / Pause">
-<svg fill="currentColor" height="20" id="gm-play-icon" viewbox="0 0 24 24" width="20">
-<path d="M8 5v14l11-7z"></path>
-</svg>
-<svg fill="currentColor" height="20" id="gm-pause-icon" style="display:none" viewbox="0 0 24 24" width="20">
-<path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"></path>
-</svg>
-</button>
-<button class="gm-audio-btn" id="gm-jump-back" title="Back 10 seconds">
-<svg fill="#888" height="22px" viewbox="0 -960 960 960" width="22px" xmlns="http://www.w3.org/2000/svg">
-<path d="M480-80q-75 0-140.5-28.5t-114-77q-48.5-48.5-77-114T120-440h80q0 117 81.5 198.5T480-160q117 0 198.5-81.5T760-440q0-117-81.5-198.5T480-720h-6l62 62-56 58-160-160 160-160 56 58-62 62h6q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-440q0 75-28.5 140.5t-77 114q-48.5 48.5-114 77T480-80ZM360-320v-180h-60v-60h120v240h-60Zm140 0q-17 0-28.5-11.5T460-360v-160q0-17 11.5-28.5T500-560h80q17 0 28.5 11.5T620-520v160q0 17-11.5 28.5T580-320h-80Zm20-60h40v-120h-40v120Z"></path>
-</svg>
-</button>
-<div class="gm-audio-progress-wrap">
-<span class="gm-audio-time" id="gm-current-time">0:00</span>
-<input class="gm-audio-progress" id="gm-progress" max="100" min="0" step="0.1" type="range" value="0"/>
-<span class="gm-audio-time" id="gm-duration">0:00</span>
-</div>
-<button class="gm-audio-btn" id="gm-jump-to-section" title="Jump audio to current section">
-<svg fill="currentColor" height="18px" viewbox="0 -960 960 960" width="18px" xmlns="http://www.w3.org/2000/svg">
-<path d="m436-320 164-440h80l164 440h-76l-40-112H552l-40 112h-76Zm138-176h132l-64-182h-4l-64 182ZM240-160 100-300l56-56 44 42v-526h80v526l44-42 56 56-140 140Z"></path>
-</svg>
-</button>
-</div>
-</div>
-</div>
 <div class="gm-page-wrap">
 <!-- Sidebar TOC -->
 <aside class="gm-toc" id="gm-toc">
@@ -1884,10 +1848,6 @@
                                         match.scrollIntoView({ block: 'nearest' });
                                 }
                         }
-                        // Update audio player section label
-                        const sec = GM_SECTIONS.find(s => s.id === id);
-                        const label = document.getElementById('gm-audio-section-label');
-                        if (sec && label) label.textContent = sec.label;
                 }
 
                 const observer = new IntersectionObserver((entries) => {
@@ -1898,6 +1858,9 @@
 
                 headings.forEach(h => observer.observe(h));
                 setActive(headings[0]?.id);
+
+                // ── Audio Player ──
+                const gmAudio = document.getElementById('gm-audio');
 
                 // ── TOC links also jump audio to section ──
                 tocLinks.forEach(a => {
@@ -1911,81 +1874,17 @@
                         });
                 });
 
-                // ── Audio Player ──
-                const gmAudio = document.getElementById('gm-audio');
-                const gmToggle = document.getElementById('gm-audio-toggle');
-                const gmPanel = document.getElementById('gm-audio-panel');
-                const gmPlayPause = document.getElementById('gm-play-pause');
-                const gmPlayIcon = document.getElementById('gm-play-icon');
-                const gmPauseIcon = document.getElementById('gm-pause-icon');
-                const gmJumpBack = document.getElementById('gm-jump-back');
-                const gmJumpSec = document.getElementById('gm-jump-to-section');
-                const gmProgress = document.getElementById('gm-progress');
-                const gmCurrent = document.getElementById('gm-current-time');
-                const gmDuration = document.getElementById('gm-duration');
-
-                gmToggle.addEventListener('click', () => gmPanel.classList.toggle('show'));
-
-                gmPlayPause.addEventListener('click', () => {
-                        if (gmAudio.paused) gmAudio.play().catch(() => { });
-                        else gmAudio.pause();
-                });
-
-                gmAudio.addEventListener('play', () => { gmPlayIcon.style.display = 'none'; gmPauseIcon.style.display = 'block'; });
-                gmAudio.addEventListener('pause', () => { gmPlayIcon.style.display = 'block'; gmPauseIcon.style.display = 'none'; });
-
-                gmJumpBack.addEventListener('click', () => {
-                        gmAudio.currentTime = Math.max(0, gmAudio.currentTime - 10);
-                });
-
-                // Jump to start of the current scrollspy section, then play
-                gmJumpSec.addEventListener('click', () => {
-                        const sec = GM_SECTIONS.find(s => s.id === currentId) || GM_SECTIONS[0];
-                        if (sec) {
-                                gmAudio.currentTime = sec.start_at;
-                                gmAudio.play().catch(() => { });
-                        }
-                });
-
-                function gmFormatTime(s) {
-                        if (!isFinite(s)) return '0:00';
-                        const m = Math.floor(s / 60), ss = Math.floor(s % 60);
-                        return `${m}:${ss.toString().padStart(2, '0')}`;
-                }
-
-                gmAudio.addEventListener('loadedmetadata', () => {
-                        gmDuration.textContent = gmFormatTime(gmAudio.duration);
-                });
-
-                let gmSeeking = false;
-                gmProgress.addEventListener('mousedown', () => gmSeeking = true);
-                gmProgress.addEventListener('mouseup', () => gmSeeking = false);
-                gmProgress.addEventListener('input', () => {
-                        if (gmAudio.duration) gmAudio.currentTime = (gmProgress.value / 100) * gmAudio.duration;
-                });
-
-                // Demo / play-pause button
+                // Demo / play-pause button in the foreword
                 const gmDemoBtn = document.getElementById('gm-demo-btn');
                 if (gmDemoBtn) {
                         gmDemoBtn.addEventListener('click', () => {
-                                if (gmAudio.paused) {
-                                        gmPanel.classList.add('show');
-                                        gmAudio.play().catch(() => { });
-                                } else {
-                                        gmAudio.pause();
-                                }
+                                if (gmAudio.paused) gmAudio.play().catch(() => { });
+                                else gmAudio.pause();
                         });
                         gmAudio.addEventListener('play',  () => { gmDemoBtn.textContent = '⏸ Pause'; });
                         gmAudio.addEventListener('pause', () => { gmDemoBtn.textContent = '▶ Read & Listen'; });
                         gmAudio.addEventListener('ended', () => { gmDemoBtn.textContent = '▶ Read & Listen'; });
                 }
-
-                gmAudio.addEventListener('timeupdate', () => {
-                        gmCurrent.textContent = gmFormatTime(gmAudio.currentTime);
-                        if (!gmSeeking && gmAudio.duration) {
-                                gmProgress.value = (gmAudio.currentTime / gmAudio.duration) * 100;
-                        }
-                });
         </script>
 </body>
 </html>

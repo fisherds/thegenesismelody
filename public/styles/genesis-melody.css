@@ -185,131 +185,20 @@ main.gm-reading-active .gm-reading * {
   padding-bottom: 2px !important;
 }
 
-/* ── Audio Player ── */
-.gm-audio-wrap {
-  position: fixed;
-  top: 8px;
-  right: 12px;
-  z-index: 600;
-  display: flex;
-  align-items: center;
-  flex-direction: row-reverse;
-  pointer-events: none;
-}
-
-.gm-audio-icon {
-  width: 34px;
-  height: 34px;
-  border: none;
-  background: rgba(255,255,255,0.92);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #444;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
-  transition: background 0.15s;
-  flex-shrink: 0;
-  pointer-events: auto;
-}
-.gm-audio-icon:hover { background: #fff; }
-
-.gm-audio-panel {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  padding: 10px 12px;
-  min-width: 310px;
-  background: rgba(255,255,255,0.97);
-  border-radius: 10px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+/* ── Native audio player in navbar ── */
+.gm-audio-native {
+  margin-left: auto;
   margin-right: 8px;
-  transform: translateX(110%);
-  opacity: 0;
-  transition: transform 0.25s ease, opacity 0.25s ease;
-  pointer-events: none;
-}
-.gm-audio-panel.show {
-  transform: translateX(0);
-  opacity: 1;
-  pointer-events: auto;
+  height: 36px;
+  min-width: 200px;
+  max-width: 380px;
+  flex-shrink: 1;
 }
 
-.gm-audio-section-label {
-  font-size: 11px;
-  color: #888;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.gm-audio-controls {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.gm-audio-btn {
-  width: 34px;
-  height: 34px;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #333;
-  border-radius: 6px;
-  transition: background 0.15s;
-  flex-shrink: 0;
-  padding: 0;
-}
-.gm-audio-btn-primary { background: rgba(0,0,0,0.06); }
-.gm-audio-btn:hover { background: rgba(0,0,0,0.10); }
-.gm-audio-btn:active { background: rgba(0,0,0,0.18); }
-
-.gm-audio-progress-wrap {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  flex: 1;
-  
-}
-
-.gm-audio-time {
-  font-size: 11px;
-  color: #777;
-  font-variant-numeric: tabular-nums;
-  flex-shrink: 0;
-}
-
-.gm-audio-progress {
-  flex: 1;
-  height: 4px;
-  border-radius: 2px;
-  background: #ddd;
-  outline: none;
-  cursor: pointer;
-  -webkit-appearance: none;
-  appearance: none;
-}
-.gm-audio-progress::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  width: 12px; height: 12px;
-  border-radius: 50%;
-  background: #657A55;
-  cursor: pointer;
-}
-.gm-audio-progress::-moz-range-thumb {
-  width: 12px; height: 12px;
-  border-radius: 50%;
-  background: #657A55;
-  cursor: pointer;
-  border: none;
+@media (max-width: 480px) {
+  .gm-audio-native {
+    min-width: 120px;
+  }
 }
 
 /* Hamburger button — hidden on desktop */
