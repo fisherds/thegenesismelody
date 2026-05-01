@@ -3,6 +3,54 @@ html {
   scroll-padding-top: 70px;
 }
 
+/* Disclaimer modal */
+#gm-disclaimer-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#gm-disclaimer-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 28px 32px 20px;
+  max-width: 460px;
+  width: calc(100% - 40px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  position: relative;
+}
+#gm-disclaimer-box h2 {
+  margin: 0 0 14px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #222;
+}
+#gm-disclaimer-box p {
+  margin: 0 0 24px;
+  font-size: 0.97rem;
+  color: #444;
+  line-height: 1.55;
+}
+#gm-disclaimer-close-row {
+  display: flex;
+  justify-content: flex-end;
+}
+#gm-disclaimer-close {
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+#gm-disclaimer-close:hover {
+  background: #555;
+}
+
 /* Layout */
 .gm-page-wrap {
   display: flex;

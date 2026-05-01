@@ -12,6 +12,28 @@
 <title>The Genesis Melody</title>
 </head>
 <body>
+
+<!-- Disclaimer modal -->
+<div id="gm-disclaimer-overlay">
+  <div id="gm-disclaimer-box">
+    <h2>Disclaimer</h2>
+    <p>This website does not represent BibleProject. It is being developed independently by an uber fan of BibleProject though!</p>
+    <div id="gm-disclaimer-close-row">
+      <button id="gm-disclaimer-close">Close</button>
+    </div>
+  </div>
+</div>
+<script>
+  (function () {
+    var overlay = document.getElementById('gm-disclaimer-overlay');
+    function dismiss() { overlay.style.display = 'none'; }
+    overlay.addEventListener('click', function (e) {
+      if (e.target === overlay) dismiss();
+    });
+    document.getElementById('gm-disclaimer-close').addEventListener('click', dismiss);
+  })();
+</script>
+
 <nav class="navbar navbar-dark fixed-top">
 <button aria-label="Open contents" class="gm-hamburger" id="gm-hamburger">☰</button>
 <a class="navbar-brand" href="index.html">The Genesis Melody</a>
@@ -1684,11 +1706,11 @@
                                         translations that help us see the
                                         structure behind the Wisdom of God. In the past, we have used a website I made,
                                 </span><span class="c21"><a class="c49" href="https://thegenesismelody.web.app/avraham.html">https://thegenesismelody.web.app/avraham.html</a></span><span>,
-                                        which links to those Classroom translations. Today, however, they are available
+                                        which links to those Classroom translations. <span style="display:none">Today, however, they are available
                                         in a new beautiful format
                                         right within the BibleProject app.  We hope you and your group can DELIGHT
                                         in using it (inside joke,
-                                        just go with it).</span></span></p>
+                                        just go with it).</span></span></span></p>
 <p class="c2"><span class="c16"></span></p>
 <p class="c30"><span class="gm-cue" data-t-end="4557" data-t-start="4529"><span>If you do find yourself in a situation where you don’t have people
                                         around you today that
