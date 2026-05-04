@@ -1,4 +1,5 @@
 // Global state
+let _closeNavDrawer = null; // set by setupMobileMenu, used by populateNavigation
 let textVisuals = [];
 let currentVisualIndex = -1;
 let selectedVerses = new Set(); // Store as "chapter:verse" strings
@@ -105,7 +106,7 @@ function populateNavigation() {
         navItem.className = 'nav-item';
         navItem.textContent = visual.verse_range;
         navItem.dataset.index = index;
-        navItem.addEventListener('click', () => selectVisual(index));
+        navItem.addEventListener('click', () => { selectVisual(index); if (_closeNavDrawer) _closeNavDrawer(); });
         navList.appendChild(navItem);
     });
 }
@@ -451,13 +452,14 @@ function setupMobileMenu() {
     const verseColumn = document.getElementById('verse-selection-column');
     const navCloseBtn = document.getElementById('nav-close-btn');
     const verseCloseBtn = document.getElementById('verse-close-btn');
-    
+    const mobileOverlay = document.getElementById('gm-mobile-overlay');
+
     let currentOpenPanel = null;
-    
+
     function isMobile() {
         return window.innerWidth <= 600;
     }
-    
+
     function updateMobileVisibility() {
         if (isMobile()) {
             hamburgerBtn.style.display = 'block';
@@ -478,9 +480,10 @@ function setupMobileMenu() {
             verseColumn.style.display = '';
             navColumn.classList.remove('mobile-visible');
             verseColumn.classList.remove('mobile-visible');
+            if (mobileOverlay) mobileOverlay.classList.remove('active');
         }
     }
-    
+
     function closeAllPanels() {
         navColumn.classList.remove('mobile-visible');
         verseColumn.classList.remove('mobile-visible');
@@ -488,17 +491,21 @@ function setupMobileMenu() {
             navColumn.style.display = 'none';
             verseColumn.style.display = 'none';
         }
+        if (mobileOverlay) mobileOverlay.classList.remove('active');
         currentOpenPanel = null;
     }
-    
+
     function openPanel(panel) {
         closeAllPanels();
         if (isMobile()) {
             panel.classList.add('mobile-visible');
             panel.style.display = 'flex';
+            if (mobileOverlay) mobileOverlay.classList.add('active');
             currentOpenPanel = panel;
         }
     }
+
+    _closeNavDrawer = closeAllPanels;
     
     function toggleNavPanel() {
         if (!isMobile()) return;
@@ -525,12 +532,13 @@ function setupMobileMenu() {
         closeAllPanels();
     });
     
-    // Close panels when clicking outside
+    // Close panels when clicking outside or on the overlay
     document.addEventListener('click', (e) => {
         if (isMobile() && currentOpenPanel && !currentOpenPanel.contains(e.target) && e.target !== hamburgerBtn) {
             closeAllPanels();
         }
     });
+    if (mobileOverlay) mobileOverlay.addEventListener('click', closeAllPanels);
     
     // Prevent clicks inside panels from closing them
     navColumn.addEventListener('click', (e) => e.stopPropagation());

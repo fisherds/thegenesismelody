@@ -1,13 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Reader</title>
+    <title>Text Visuals – The Genesis Melody</title>
     <link rel="stylesheet" href="styles/style.css">
     <style>
-        /* Simplified layout styles for avraham.html */
+        /* Navbar */
+        .gm-navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 56px;
+            background-color: #657A55;
+            display: flex;
+            align-items: center;
+            padding: 0 16px;
+            z-index: 1030;
+        }
+        .gm-navbar-brand {
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            letter-spacing: 0.01em;
+        }
+        .gm-navbar-brand:hover { color: #fff; text-decoration: none; }
+        .gm-navbar-nav {
+            display: flex;
+            gap: 8px;
+            flex: 1;
+            justify-content: center;
+        }
+        .gm-nav-btn {
+            background: rgba(255,255,255,0.15);
+            color: #fff;
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 14px;
+            padding: 4px 14px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.15s;
+        }
+        .gm-nav-btn:hover { background: rgba(255,255,255,0.28); }
+        .gm-nav-btn:disabled { opacity: 0.35; cursor: default; }
+        .gm-page-links {
+            display: flex;
+            gap: 2px;
+        }
+        .gm-page-link {
+            color: rgba(255,255,255,0.6);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+            padding: 4px 10px;
+            border-radius: 12px;
+        }
+        .gm-page-link:hover { color: #fff; text-decoration: none; }
+        .gm-page-active {
+            color: #fff;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+        .gm-nav-hamburger {
+            display: none;
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 20px;
+            cursor: pointer;
+            padding: 4px 8px;
+            margin-right: 6px;
+            line-height: 1;
+        }
+        #gm-mobile-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            top: 56px;
+            background: rgba(0,0,0,0.45);
+            z-index: 998;
+        }
+        #gm-mobile-overlay.active { display: block; }
+        /* Layout */
         .main-container {
             display: flex;
-            height: 100vh;
+            height: calc(100vh - 56px);
+            margin-top: 56px;
         }
         #left-panel {
             width: 100% !important;
@@ -206,6 +285,19 @@
     </script>
 </head>
 <body>
+    <nav class="gm-navbar">
+        <button id="hamburger-btn" class="gm-nav-hamburger" title="Show navigation">☰</button>
+        <a class="gm-navbar-brand" href="/">The Genesis Melody</a>
+        <div class="gm-navbar-nav">
+            <button id="prev-btn" class="gm-nav-btn">← Previous</button>
+            <button id="next-btn" class="gm-nav-btn">Next →</button>
+        </div>
+        <div class="gm-page-links">
+            <a class="gm-page-link" href="/">Article</a>
+            <a class="gm-page-link gm-page-active" href="/reader">Text Visuals</a>
+        </div>
+    </nav>
+    <div id="gm-mobile-overlay"></div>
     <div class="main-container">
         <!-- Left side: Bible Reader -->
         <div class="left-panel" id="left-panel">
@@ -223,13 +315,6 @@
                 
                 <!-- Iframe Column -->
                 <div class="iframe-column">
-                    <div class="iframe-controls">
-                        <button id="hamburger-btn" class="hamburger-btn" style="display: none;" title="Show navigation">☰</button>
-                        <div style="flex: 1; display: flex; justify-content: space-between; gap: 10px; align-items: center;">
-                            <button id="prev-btn" class="nav-btn">← Previous</button>
-                            <button id="next-btn" class="nav-btn">Next →</button>
-                        </div>
-                    </div>
                     <div style="position: relative; flex: 1; overflow: hidden;">
                         <iframe 
                             id="bible-visual-iframe"
