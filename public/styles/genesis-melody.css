@@ -1,6 +1,20 @@
 /* Anchor scroll offset so headings don't hide under the fixed navbar */
 html {
   scroll-padding-top: 70px;
+  overflow-x: hidden;
+}
+
+@keyframes gm-spin { to { transform: rotate(360deg); } }
+.gm-btn-spinner {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border: 2px solid rgba(255,255,255,0.4);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: gm-spin 0.7s linear infinite;
+  vertical-align: middle;
+  margin-bottom: 2px;
 }
 
 /* Disclaimer modal */
@@ -203,9 +217,10 @@ main.gm-reading-active .gm-reading * {
 }
 
 .gdoc-content table {
+  display: block;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .gdoc-content img {

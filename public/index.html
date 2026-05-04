@@ -123,7 +123,7 @@
 <p class="c2"><span class="c16"></span></p>
 </div>
 <h1 class="c87" data-t-end="3" data-t-start="0" id="the-genesis-melody"><span class="c42 c70 c88"><span class="gm-cue" data-t-end="2" data-t-start="0">The Genesis Melody</span></span></h1>
-<p style="text-align:center;margin:8px 0 20px;display:flex;justify-content:center;gap:12px;flex-wrap:wrap;"><button id="gm-demo-btn" style="background:#7a8c6e;color:#fff;border:none;border-radius:20px;padding:9px 22px;font-size:0.95rem;font-weight:600;cursor:pointer;letter-spacing:0.02em;">▶ Read &amp; Listen</button><a href="audio/TheGenesisMelody.m4a" style="background:#7a8c6e;color:#fff;border:none;border-radius:20px;padding:9px 22px;font-size:0.95rem;font-weight:600;cursor:pointer;letter-spacing:0.02em;text-decoration:none;">&#8595; Listen on the Go</a></p>
+<p style="text-align:center;margin:8px 0 20px;display:flex;justify-content:center;gap:12px;flex-wrap:wrap;"><button id="gm-demo-btn" style="background:#7a8c6e;color:#fff;border:none;border-radius:20px;padding:9px 22px;font-size:0.95rem;font-weight:600;cursor:pointer;letter-spacing:0.02em;">▶ Read &amp; Listen</button><a id="gm-listen-btn" href="audio/TheGenesisMelody.m4a" style="background:#7a8c6e;color:#fff;border:none;border-radius:20px;padding:9px 22px;font-size:0.95rem;font-weight:600;cursor:pointer;letter-spacing:0.02em;text-decoration:none;">&#8595; Listen on the Go</a></p>
 <p class="c9 c29"><span class="c7"></span></p>
 <h2 class="c45" id="a-quick-foreword"><span class="c42 c44"><span class="gm-cue" data-t-end="3" data-t-start="2">A Quick Foreword</span></span></h2>
 <p class="c30" data-t-end="36" data-t-start="3"><span class="gm-cue" data-t-end="5" data-t-start="3">Hey. Hi.</span><span class="gm-cue" data-t-end="9" data-t-start="5"> Before we get started, I wanted to let you know that I love you.</span><span class="gm-cue" data-t-end="14" data-t-start="9"> Yes, that’s
@@ -2012,6 +2012,12 @@
                                 gmProgress.value = (gmAudio.currentTime / gmAudio.duration) * 100;
                         }
                 });
+        </script>
+        <script>
+          document.getElementById('gm-listen-btn').addEventListener('click', function() {
+            this.innerHTML = '<span class="gm-btn-spinner"></span> Loading';
+            this.style.pointerEvents = 'none';
+          });
         </script>
 </body>
 </html>
