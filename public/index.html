@@ -1920,3 +1920,106 @@
 
                 // ── Audio Player ──
                 const gmAudio = document.getElementById('gm-audio');
+                const gmToggle = document.getElementById('gm-audio-toggle');
+                const gmPanel = document.getElementById('gm-audio-panel');
+                const gmPlayPause = document.getElementById('gm-play-pause');
+                const gmPlayIcon = document.getElementById('gm-play-icon');
+                const gmPauseIcon = document.getElementById('gm-pause-icon');
+                const gmJumpBack = document.getElementById('gm-jump-back');
+                const gmProgress = document.getElementById('gm-progress');
+                const gmCurrent = document.getElementById('gm-current-time');
+                const gmDuration = document.getElementById('gm-duration');
+                const audioPlayerElements = [gmAudio, gmToggle, gmPanel, gmPlayPause, gmPauseIcon, gmJumpBack, gmProgress, gmCurrent, gmDuration];
+                for (let audioPlayerElement in audioPlayerElements) {
+                        if (!audioPlayerElement) {
+                                console.log("Missing Audio Player Element", audioPlayerElement);
+                        }
+                }
+
+                gmToggle.addEventListener('click', () => gmPanel.classList.toggle('show'));
+
+                gmPlayPause.addEventListener('click', () => {
+                        if (gmAudio.paused) gmAudio.play().catch(() => { });
+                        else gmAudio.pause();
+                });
+
+                gmAudio.addEventListener('play', () => { gmPlayIcon.style.display = 'none'; gmPauseIcon.style.display = 'block'; });
+                gmAudio.addEventListener('pause', () => { gmPlayIcon.style.display = 'block'; gmPauseIcon.style.display = 'none'; });
+
+                gmJumpBack.addEventListener('click', () => {
+                        gmAudio.currentTime = Math.max(0, gmAudio.currentTime - 10);
+                });
+
+                function gmFormatTime(s) {
+                        if (!isFinite(s)) return '0:00';
+                        const m = Math.floor(s / 60), ss = Math.floor(s % 60);
+                        return `${m}:${ss.toString().padStart(2, '0')}`;
+                }
+
+                let pendingSeekSec = null;
+
+                function gmSeekTo(sec) {
+                        if (isFinite(gmAudio.duration) && gmAudio.duration > 0) {
+                                gmAudio.currentTime = sec;
+                        } else {
+                                pendingSeekSec = sec;
+                        }
+                }
+
+                gmAudio.addEventListener('loadedmetadata', () => {
+                        gmDuration.textContent = gmFormatTime(gmAudio.duration);
+                        if (pendingSeekSec !== null) {
+                                gmAudio.currentTime = pendingSeekSec;
+                                pendingSeekSec = null;
+                        }
+                });
+
+                let gmSeeking = false;
+                gmProgress.addEventListener('mousedown', () => gmSeeking = true);
+                gmProgress.addEventListener('mouseup', () => gmSeeking = false);
+                gmProgress.addEventListener('input', () => {
+                        if (isFinite(gmAudio.duration) && gmAudio.duration > 0) {
+                                gmAudio.currentTime = (gmProgress.value / 100) * gmAudio.duration;
+                        }
+                });
+
+                // Demo / play-pause button
+                const gmDemoBtn = document.getElementById('gm-demo-btn');
+                if (gmDemoBtn) {
+                        gmDemoBtn.addEventListener('click', () => {
+                                if (gmAudio.paused) {
+                                        gmPanel.classList.add('show');
+                                        // Seek to current scrollspy section on first play
+                                        if (gmAudio.currentTime < 1) {
+                                                const sec = GM_SECTIONS.find(s => s.id === currentId) || GM_SECTIONS[0];
+                                                if (sec) {
+                                                        gmAudio.addEventListener('seeked', () => gmAudio.play().catch(() => { }), { once: true });
+                                                        gmSeekTo(sec.start_at);
+                                                        return;
+                                                }
+                                        }
+                                        gmAudio.play().catch(() => { });
+                                } else {
+                                        gmAudio.pause();
+                                }
+                        });
+                        gmAudio.addEventListener('play',  () => { gmDemoBtn.textContent = '⏸ Pause'; });
+                        gmAudio.addEventListener('pause', () => { gmDemoBtn.textContent = '▶ Read & Listen'; });
+                        gmAudio.addEventListener('ended', () => { gmDemoBtn.textContent = '▶ Read & Listen'; });
+                }
+
+                gmAudio.addEventListener('timeupdate', () => {
+                        gmCurrent.textContent = gmFormatTime(gmAudio.currentTime);
+                        if (!gmSeeking && gmAudio.duration) {
+                                gmProgress.value = (gmAudio.currentTime / gmAudio.duration) * 100;
+                        }
+                });
+        </script>
+        <script>
+          document.getElementById('gm-listen-btn').addEventListener('click', function() {
+            this.innerHTML = '<span class="gm-btn-spinner"></span> Loading';
+            this.style.pointerEvents = 'none';
+          });
+        </script>
+</body>
+</html>
