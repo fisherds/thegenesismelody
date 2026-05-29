@@ -5,7 +5,6 @@
   let currentCue = null;
   let mainEl = null;
 
-  // Build sorted cue list from elements annotated by the pre-processing script
   function buildCues() {
     const els = document.querySelectorAll('.gm-cue[data-t-start]');
     cues = Array.from(els).map(el => ({
@@ -15,7 +14,6 @@
     })).sort((a, b) => a.start - b.start);
   }
 
-  // Binary search: find the cue whose [start, end] window contains `time`
   function findCue(time) {
     let lo = 0, hi = cues.length - 1;
     while (lo <= hi) {
@@ -24,7 +22,6 @@
       else if (cues[mid].start >  time) hi = mid - 1;
       else return cues[mid];
     }
-    // Between cues — return the nearest upcoming one
     return lo < cues.length ? cues[lo] : null;
   }
 
@@ -39,7 +36,6 @@
     cue.el.classList.add('gm-reading');
     if (mainEl) mainEl.classList.add('gm-reading-active');
 
-    // Scroll into view if outside the visible area (accounting for fixed navbar)
     const rect = cue.el.getBoundingClientRect();
     const navH = 70;
     if (rect.top < navH || rect.bottom > window.innerHeight - 60) {
@@ -69,6 +65,18 @@
     audio.addEventListener('ended',  clearHighlight);
     audio.addEventListener('seeked', function () {
       setHighlight(findCue(audio.currentTime));
+    });
+
+    cues.forEach(function (cue) {
+      cue.el.style.cursor = 'pointer';
+      cue.el.addEventListener('click', function (e) {
+        e.stopPropagation();
+        setHighlight(cue);
+        audio.addEventListener('seeked', function () {
+          audio.play().catch(function () {});
+        }, { once: true });
+        audio.currentTime = cue.start;
+      });
     });
   });
 })();
