@@ -2,7 +2,7 @@
   'use strict';
 
   let cues = [];
-  let currentCue = null;
+  let currentGroup = [];
   let mainEl = null;
 
   function buildCues() {
@@ -14,7 +14,8 @@
     })).sort((a, b) => a.start - b.start);
   }
 
-  function findCue(time) {
+  // Binary search: find one cue whose [start, end] window contains `time`
+  function findOneCue(time) {
     let lo = 0, hi = cues.length - 1;
     while (lo <= hi) {
       const mid = (lo + hi) >> 1;
@@ -25,27 +26,39 @@
     return lo < cues.length ? cues[lo] : null;
   }
 
-  function setHighlight(cue) {
-    if (cue === currentCue) return;
-    if (currentCue) currentCue.el.classList.remove('gm-reading');
-    currentCue = cue;
-    if (!cue) {
-      if (mainEl) mainEl.classList.remove('gm-reading-active');
-      return;
-    }
-    cue.el.classList.add('gm-reading');
-    if (mainEl) mainEl.classList.add('gm-reading-active');
+  // Return all cues that share the exact same [start, end] as the primary match.
+  // Scripture verses have 5-8 spans all at the same timestamp — this highlights them all.
+  function findGroup(time) {
+    const primary = findOneCue(time);
+    if (!primary) return [];
+    return cues.filter(c => c.start === primary.start && c.end === primary.end);
+  }
 
-    const rect = cue.el.getBoundingClientRect();
-    const navH = 70;
-    if (rect.top < navH || rect.bottom > window.innerHeight - 60) {
-      cue.el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  function setHighlight(group) {
+    const newSet  = new Set(group);
+    const oldSet  = new Set(currentGroup);
+
+    currentGroup.forEach(c => { if (!newSet.has(c)) c.el.classList.remove('gm-reading'); });
+    group.forEach(c        => { if (!oldSet.has(c)) c.el.classList.add('gm-reading'); });
+    currentGroup = group;
+
+    if (!mainEl) return;
+    if (group.length > 0) {
+      mainEl.classList.add('gm-reading-active');
+      // Scroll the first element of the group into view if needed
+      const rect = group[0].el.getBoundingClientRect();
+      const navH = 70;
+      if (rect.top < navH || rect.bottom > window.innerHeight - 60) {
+        group[0].el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    } else {
+      mainEl.classList.remove('gm-reading-active');
     }
   }
 
   function clearHighlight() {
-    if (currentCue) currentCue.el.classList.remove('gm-reading');
-    currentCue = null;
+    currentGroup.forEach(c => c.el.classList.remove('gm-reading'));
+    currentGroup = [];
     if (mainEl) mainEl.classList.remove('gm-reading-active');
   }
 
@@ -58,20 +71,20 @@
     if (!audio) return;
 
     audio.addEventListener('timeupdate', function () {
-      setHighlight(findCue(audio.currentTime));
+      setHighlight(findGroup(audio.currentTime));
     });
 
     audio.addEventListener('pause',  clearHighlight);
     audio.addEventListener('ended',  clearHighlight);
     audio.addEventListener('seeked', function () {
-      setHighlight(findCue(audio.currentTime));
+      setHighlight(findGroup(audio.currentTime));
     });
 
     cues.forEach(function (cue) {
       cue.el.style.cursor = 'pointer';
       cue.el.addEventListener('click', function (e) {
         e.stopPropagation();
-        setHighlight(cue);
+        setHighlight(findGroup(cue.start));
         audio.addEventListener('seeked', function () {
           audio.play().catch(function () {});
         }, { once: true });
