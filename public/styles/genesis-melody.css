@@ -191,15 +191,18 @@ html {
 
 /* Read-along highlight — active cue while audio is playing */
 .gm-reading {
-  background: #ede6b4;
+  background: #ede6b4 !important;
   border-radius: 4px;
-  box-shadow: 0 0 0 3px #ede6b4;
+  box-shadow: 0 0 0 3px #ede6b4 !important;
   transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 /* Slightly different treatment inside scripture cards */
 .scripture-block .gm-reading {
-  background: #ede6b4;
-  box-shadow: 0 0 0 2px #ede6b4;
+  box-shadow: 0 0 0 2px #ede6b4 !important;
+}
+/* Inner spans (e.g. white .c1, teal .c19) must not paint over the yellow fill */
+.gm-reading * {
+  background-color: transparent !important;
 }
 
 /* Dim-all effect: fade non-highlighted text when a cue is active.
