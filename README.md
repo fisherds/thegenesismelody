@@ -1,6 +1,9 @@
 # thegenesismelody
 Website for thegenesismelody.web.app
 
+## Git LFS
+The audio files in public/audio/*.m4a are stored with Git LFS. Install it (brew install git-lfs, then git lfs install) before cloning, or run git lfs pull after cloning, so the real audio files are downloaded instead of small pointer files. Deploy only from a checkout that has the real files.
+
 
 ## Local testing note
 Note, instead of firebase serve for local development use...
