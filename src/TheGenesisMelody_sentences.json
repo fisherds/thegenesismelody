@@ -1,2880 +1,3480 @@
 [
   {
-    "start": 0,
-    "end": 2,
-    "text": "The Genesis melody, a quick forward."
+    "id": "3509fca29bfd",
+    "start": 0.0,
+    "end": 1.28,
+    "text": "The Genesis Melody"
   },
   {
-    "start": 3,
-    "end": 4,
-    "text": "Hey, hi."
+    "id": "a557ade044d8",
+    "start": 1.28,
+    "end": 2.5,
+    "text": "A Quick Foreword"
   },
   {
+    "id": "35fd6ee40418",
+    "start": 2.5,
+    "end": 3.64,
+    "text": "Hey."
+  },
+  {
+    "id": "3f6496c4572e",
+    "start": 3.64,
+    "end": 4.04,
+    "text": "Hi."
+  },
+  {
+    "id": "c9f8c808b25c",
     "start": 5,
     "end": 8,
     "text": "Before we get started, I wanted to let you know that I love you."
   },
   {
+    "id": "f40f59be03d0",
     "start": 8,
     "end": 12,
     "text": "Yes, that's extremely awkward to say in our generation, but it really shouldn't be."
   },
   {
-    "start": 13,
-    "end": 22,
-    "text": "Of course, I don't know you, and we've never met, so my love for you is a bit limited, but you are an image of God like me, so I love you."
+    "id": "4a3ee51965df",
+    "start": 12,
+    "end": 15.36,
+    "text": "Of course, I don’t know you, and we’ve never met."
   },
   {
-    "start": 22,
-    "end": 23,
+    "id": "ef6806914cb4",
+    "start": 15.36,
+    "end": 20.7,
+    "text": "So my love for you is a bit limited, but you are an Image of God like me, so…"
+  },
+  {
+    "id": "1fc92a48da7c",
+    "start": 20.7,
+    "end": 21.66,
+    "text": "I love you."
+  },
+  {
+    "id": "9fe464b80dcc",
+    "start": 21.66,
+    "end": 23.04,
     "text": "Oops, I said it again."
   },
   {
-    "start": 24,
-    "end": 33,
+    "id": "d8ae2d096939",
+    "start": 23.04,
+    "end": 32.86,
     "text": "My goal here is not to convince you of anything at all, but to invite you to receive a gift from God in His Word so that we can know, love Him more."
   },
   {
+    "id": "9667352b46fd",
     "start": 35,
     "end": 36,
     "text": "Introduction and motivation."
   },
   {
+    "id": "7031f7dc1d09",
     "start": 37,
     "end": 40,
     "text": "This guide is organized into three main sections."
   },
   {
+    "id": "aad068bdc9b7",
     "start": 41,
     "end": 42,
     "text": "Introduction and motivation."
   },
   {
+    "id": "2d62ea1d6123",
     "start": 43,
     "end": 44,
     "text": "The part you're about to read."
   },
   {
+    "id": "1fd8f6707d68",
     "start": 45,
     "end": 45,
     "text": "Melody observations."
   },
   {
+    "id": "6157668bc9b2",
     "start": 46,
     "end": 51,
     "text": "A detailed look at Genesis 1 through 22 broken into three parts."
   },
   {
+    "id": "e92bff512c3b",
     "start": 52,
     "end": 54,
     "text": "Genesis 1 through 7, the template of the melody."
   },
   {
+    "id": "c13afd5d022f",
     "start": 55,
     "end": 58,
     "text": "Genesis 8 through 11, the second round of the melody."
   },
   {
+    "id": "80b5e026d22c",
     "start": 59,
     "end": 64,
     "text": "Genesis 11, 27 through 22 19, cycles 3 to 7 with Abraham."
   },
   {
+    "id": "b8a90552c9e9",
     "start": 65,
     "end": 71,
     "text": "From there, this guide will pivot when we read the details of the seventh cycles, collapse, and recreation moments."
   },
   {
+    "id": "a36f681cdd18",
     "start": 72,
     "end": 80,
     "text": "We'll let the story guide us, but something will happen naturally when we read about Abraham's test, and the oath that Yahweh makes."
   },
   {
+    "id": "02c000cd52f7",
     "start": 82,
     "end": 84,
     "text": "Part 3, the melody points to Jesus."
   },
   {
+    "id": "a0df6a906e0e",
     "start": 85,
     "end": 91,
     "text": "When you read the Bible, it's tempting to read only the parts about Jesus and the early church."
   },
   {
+    "id": "4c82c324a12f",
     "start": 91,
     "end": 98,
     "text": "However, God's grand song is best experience when the Old Testament paves the way."
   },
   {
+    "id": "3faa463d254e",
     "start": 98,
     "end": 100,
     "text": "This guide is the same."
   },
   {
+    "id": "a5b0952de7df",
     "start": 100,
     "end": 107,
     "text": "You should expect to enjoy the final section about Jesus the most, but do try to read the earlier sections first?"
   },
   {
+    "id": "f4c5f93590ad",
     "start": 108,
     "end": 109,
     "text": "Think of it like a movie."
   },
   {
+    "id": "5491aa75e634",
     "start": 109,
     "end": 113,
     "text": "The climax means more when you haven't skipped the first hour."
   },
   {
+    "id": "9517658c6577",
     "start": 114,
     "end": 117,
     "text": "Summary, what is the Genesis melody?"
   },
   {
+    "id": "87672d72ca3a",
     "start": 118,
     "end": 121,
     "text": "When you approach the Bible, what do you see there?"
   },
   {
+    "id": "9df242f7d7c2",
     "start": 122,
     "end": 123,
     "text": "Well, what do you expect to see there?"
   },
   {
+    "id": "4c641b46cbbf",
     "start": 124,
     "end": 129,
     "text": "Our expectations are often at odds with our ability to simply receive the message."
   },
   {
+    "id": "955636f50972",
     "start": 130,
     "end": 134,
     "text": "This guide will focus on reading Genesis 1 through 23 trying to see patterns."
   },
   {
+    "id": "b0b1f7e61ab1",
     "start": 135,
     "end": 138,
     "text": "The goal is to approach the test as a blank slate."
   },
   {
+    "id": "f0ae236fa1e4",
     "start": 139,
     "end": 144,
     "text": "To be honest, I'm not capable of doing that either, but it's important to know the mindset we're seeking to see."
   },
   {
+    "id": "0e973d5ccc5c",
     "start": 144,
     "end": 149,
     "text": "Therefore, shaping the Bible to meet our expectations is rather pointless."
   },
   {
+    "id": "9e86a16e7bce",
     "start": 150,
     "end": 154,
     "text": "The goal is to open ourselves up so that we can be shaped by the Bible."
   },
   {
+    "id": "b314450db25f",
     "start": 155,
     "end": 159,
     "text": "I'm really excited to share with you some of the things I've gotten to see in Genesis."
   },
   {
+    "id": "718caa4a6741",
     "start": 159,
     "end": 167,
     "text": "Through this writing process, I've felt the guiding presence of the Spirit myself, and I'm just amazed at what these authors have been able to create."
   },
   {
+    "id": "3338d4ae3ceb",
     "start": 168,
     "end": 180,
     "text": "The Hebrew Bible, the Old Testament, was carefully written by humans, partnering with the work of the Spirit over the course of hundreds of years to make God known to us."
   },
   {
+    "id": "fd905d70ba48",
     "start": 181,
     "end": 188,
     "text": "As a result, it is a very dense, beautiful collection of ancient scrolls with many layers done packed."
   },
   {
+    "id": "79b1c712c99a",
     "start": 189,
     "end": 196,
     "text": "Readers who started the beginning, myself included, see only a small fraction of the depth the authors are communicating."
   },
   {
+    "id": "b18a4bc3daca",
     "start": 197,
     "end": 200,
     "text": "However, the goal of this guide is not to learn everything."
   },
   {
+    "id": "086bb10fe705",
     "start": 201,
     "end": 205,
     "text": "We'll choose to focus on just one significant layer that is often overlooked."
   },
   {
+    "id": "894dc7558f66",
     "start": 206,
     "end": 214,
     "text": "There is a clear, repeated, creation melody that runs throughout the Hebrew Bible and into the New Testament."
   },
   {
+    "id": "3b0c686d7a5b",
     "start": 215,
     "end": 223,
     "text": "Once you have eyes to see and ears to hear how the authors replay the notes, you won't be able to miss them as you continue to read the Bible."
   },
   {
+    "id": "a94171f4706d",
     "start": 223,
     "end": 234,
     "text": "This song starts with God bringing about creation, life and blessing, then characteristic human choices and division, cause things to come to a head and a collapse."
   },
   {
+    "id": "cfe76cde1097",
     "start": 235,
     "end": 242,
     "text": "God, however, uses a collapse to once again bring about creation, life, and blessing from the non-life."
   },
   {
+    "id": "ff1a8d0bcf54",
     "start": 244,
     "end": 252,
     "text": "Understanding how God continually brings about and sustains life is foundational, not just in the Bible, but in our own lives as well."
   },
   {
+    "id": "5709954feb7c",
     "start": 253,
     "end": 261,
     "text": "So the authors of the Bible provided a coderring beginning on page 1 to unlock the rest of the story."
   },
   {
+    "id": "23a3251f891f",
     "start": 262,
     "end": 268,
     "text": "Before we get started, and I should explain the title, the word Genesis means two things to us."
   },
   {
+    "id": "4cfc657be313",
     "start": 268,
     "end": 274,
     "text": "First it refers to the scroll of Genesis, but it also simply means what the word means."
   },
   {
+    "id": "6d419e9d5185",
     "start": 275,
     "end": 283,
     "text": "The word Genesis comes from the Greek Ganesis, meaning source, origin, beginning, or birth."
   },
   {
+    "id": "91fe22ee9ee9",
     "start": 284,
     "end": 286,
     "text": "Matthew liked this word, and so do I."
   },
   {
+    "id": "41056a95bfe3",
     "start": 287,
     "end": 299,
     "text": "So when choosing a title for a repeated creation pattern, a Genesis, that is easily seen in the scroll of Genesis, it seemed only fitting to call it the Genesis melody."
   },
   {
+    "id": "15a69bf075bc",
     "start": 300,
     "end": 306,
     "text": "However, don't be fooled, the author of life keeps creating well beyond the pages of Genesis."
   },
   {
+    "id": "2c75f1e595cc",
     "start": 308,
     "end": 317,
     "text": "Background The melody is discussed at length in the Bible Project Genesis classroom series, namely these five courses."
   },
   {
+    "id": "3dfcd12b814d",
     "start": 317,
     "end": 324,
     "text": "Heaven and Earth, Adam to Noah, Noah to Abraham, Abraham and Jacob."
   },
   {
+    "id": "3ca49ff25f3f",
     "start": 325,
     "end": 343,
     "text": "The most succinct summaries of what Tim Mackey calls the melody are found in Session 11 of the Abraham class titled The Genesis 1 through 11 melody repeats, or in Sessions 2 and 3 of the Jacob class, the thematic melody of Genesis 1 through 9,"
   },
   {
+    "id": "78f1c2b30055",
     "start": 343,
     "end": 346,
     "text": "and Abraham replays the melody."
   },
   {
+    "id": "e3c3c1defa8c",
     "start": 347,
     "end": 352,
     "text": "However, if you are new to the melody concept, it is best to start from the beginning."
   },
   {
+    "id": "dc4ed2b745c6",
     "start": 353,
     "end": 370,
     "text": "Through his studies, Tim began to see how the authors replayed similar concepts, often in the same order, that felt like the melody of a song, and emerged after years of teaching, exploring commentaries, and discussing the text with reading communities."
   },
   {
+    "id": "e04418080106",
     "start": 371,
     "end": 378,
     "text": "This guide builds on those insights, to lay out the melody for you, and help us all meditate on the purpose."
   },
   {
+    "id": "711f08710697",
     "start": 379,
     "end": 384,
     "text": "What were these authors communicating by intentionally structuring the text in this way?"
   },
   {
+    "id": "e63b2045008e",
     "start": 388,
     "end": 389,
     "text": "Why study the melody?"
   },
   {
+    "id": "2d7ed341aa32",
     "start": 391,
     "end": 393,
     "text": "What is the value in seeing the structure of the melody?"
   },
   {
+    "id": "965afba7ef1f",
     "start": 394,
     "end": 401,
     "text": "The main focus in the Genesis courses is how the repeated notes should be ringing in our ears to link parts of the melody."
   },
   {
+    "id": "4d3c00afb0cd",
     "start": 402,
     "end": 412,
     "text": "Parallel stories might be separated by many chapters, but with only a few distinct notes, the authors can put them side by side in your mind."
   },
   {
+    "id": "fdcd78c0af9b",
     "start": 413,
     "end": 416,
     "text": "One story informs the other, and both benefit from the connection."
   },
   {
+    "id": "54640214bc5c",
     "start": 417,
     "end": 426,
     "text": "Let's take a short, but deep dive to consider one specific example, Genesis 3 6 through 7a."
   },
   {
+    "id": "75959f2f2aae",
     "start": 426,
     "end": 432,
     "text": "You probably know this text well, notice the key words as you read it again."
   },
   {
+    "id": "6e445fc0501b",
     "start": 433,
     "end": 444,
     "text": "And the woman saw that the tree was good for reading, and that it was desirable to the eyes, and that the tree was desirable to make one wise."
   },
   {
+    "id": "f30600c05cb9",
     "start": 444,
     "end": 455,
     "text": "And she took from its fruit, and she ate, and she gave also to her husband with her, and he ate, and the eyes of both of them were opened."
   },
   {
+    "id": "347dad935c87",
     "start": 457,
     "end": 473,
     "text": "The best way to hear what the authors are communicating in this passage is not to focus on these words alone, and isolation these words have some value, but to fully grasp the verse you have to spend time thinking about how it connects to the greater narrative."
   },
   {
+    "id": "fecf30ab8721",
     "start": 474,
     "end": 479,
     "text": "As we will soon discuss, this verse is a choice, in the first round of the melody."
   },
   {
+    "id": "e72df139defa",
     "start": 479,
     "end": 488,
     "text": "Let's compare it to the choice in melody 4, Genesis 16 2 through 4, by reading the story of Sarah I, Abram, and Hagar."
   },
   {
+    "id": "1d3447b04328",
     "start": 489,
     "end": 495,
     "text": "Note, Abram is just an alternative spelling of Abram, who will later be renamed Abraham."
   },
   {
+    "id": "3430561612d8",
     "start": 496,
     "end": 504,
     "text": "In the Bible Project translation, you will see a few surprising spellings to help us more faithfully pronounce the original Hebrew names."
   },
   {
+    "id": "9926a59e2e84",
     "start": 505,
     "end": 512,
     "text": "Additionally, Yahweh, God's personal name, is used when appropriate, instead of translating it to God or Lord."
   },
   {
+    "id": "787b65a8e78e",
     "start": 513,
     "end": 517,
     "text": "If that makes you feel uncomfortable, just replace Yahweh with God as you read that spine."
   },
   {
+    "id": "bcd07c7bd9ba",
     "start": 518,
     "end": 522,
     "text": "Notice the repeated words here that echo the Eden passage above."
   },
   {
+    "id": "a6615b20951f",
     "start": 524,
     "end": 537,
     "text": "And Sarah I said to Abram, look, please, Yahweh has restrained me from giving birth. Please go into my slave-girl. Perhaps I can be built up by means of her."
   },
   {
+    "id": "6ac29d8369ef",
     "start": 538,
     "end": 540,
     "text": "And Abram listened to the voice of Sarah."
   },
   {
+    "id": "fdaf22257401",
     "start": 541,
     "end": 556,
     "text": "And Sarah I, the wife of Abram, took Hagar her Egyptian slave at the end of ten years of Abram dwelling in the land of Canaan, and she gave her to Abram her husband as a wife."
   },
   {
+    "id": "b16b4ddc3b0b",
     "start": 557,
     "end": 567,
     "text": "And he went into Hagar, and she became pregnant, and she saw that she was pregnant, and her mistress became cursed in her eyes."
   },
   {
+    "id": "7bea31e58137",
     "start": 569,
     "end": 575,
     "text": "The reuse pattern goes from taking a piece of fruit to taking an image of God, that escalated quickly."
   },
   {
+    "id": "ab6fbdff66fe",
     "start": 576,
     "end": 581,
     "text": "These two choices are separated by thirteen chapters, but they are clear hyperlinks."
   },
   {
+    "id": "0fa3065e10df",
     "start": 582,
     "end": 586,
     "text": "If you set them alongside one another, you can see how they are similar and how they are different."
   },
   {
+    "id": "c21e6e56d427",
     "start": 587,
     "end": 601,
     "text": "Additionally, they are both in versions of an earlier choice pattern from Genesis 2 18-22, where God Himself sees what is not good, then takes, builds, and gives."
   },
   {
+    "id": "e154e5ba3e06",
     "start": 602,
     "end": 607,
     "text": "Let's read that story and consider how all three passages inform one another."
   },
   {
+    "id": "32be837d70b7",
     "start": 608,
     "end": 614,
     "text": "And Yahweh God said, it is not good for the human to be alone."
   },
   {
+    "id": "335c569901ce",
     "start": 615,
     "end": 624,
     "text": "I will make a help counter-part for Him, and Yahweh caused to fall asleep on the human, and He slept."
   },
   {
+    "id": "2ec038377c11",
     "start": 625,
     "end": 639,
     "text": "And He took one from His sides, and He closed the flesh of the place, and Yahweh built the side which He took from the human into woman, and He brought her to the human."
   },
   {
+    "id": "9922a3e1b5bd",
     "start": 640,
     "end": 646,
     "text": "The author's signal connections through both repeated words and shared symbols."
   },
   {
+    "id": "43bc29b0c5cb",
     "start": 646,
     "end": 656,
     "text": "They are clues to help us become better readers, and it's remarkable the depth of understanding your group can reach as you hold repeated stories in your mind."
   },
   {
+    "id": "0fc0c22db78f",
     "start": 656,
     "end": 662,
     "text": "God saw good, tove, and Genesis 1 seven times, ending in a very good."
   },
   {
+    "id": "351e52bd538d",
     "start": 663,
     "end": 669,
     "text": "Humans, however, characteristically, see what is good for themselves and their own eyes."
   },
   {
+    "id": "954a791d5369",
     "start": 669,
     "end": 679,
     "text": "We take and eat an image to consume in this case, and then give, send out non-life choices, as shown in 3 6 and 16 3."
   },
   {
+    "id": "5b94fa3d6e1d",
     "start": 680,
     "end": 684,
     "text": "But God sees what is not good, something in our world that is broken."
   },
   {
+    "id": "63d37eea57ca",
     "start": 685,
     "end": 690,
     "text": "He takes and builds, multiplies abundance, then gives, sends out life."
   },
   {
+    "id": "5e7c203356c8",
     "start": 691,
     "end": 697,
     "text": "Both the similarities and the differences pop out as significant when you compare arounds of the melody."
   },
   {
+    "id": "ac6d573743d5",
     "start": 698,
     "end": 712,
     "text": "Finally, in both human replays, the male character is said to have listened to the voice of his wife, instead of trusting God, who will you trust to receive the knowledge of good and bad?"
   },
   {
+    "id": "bb5f6da58b05",
     "start": 714,
     "end": 715,
     "text": "Structure."
   },
   {
+    "id": "6d2a4719577d",
     "start": 715,
     "end": 725,
     "text": "For the purposes of this guide, we will consider a four-part melody that is repeated seven times from Genesis 1 through 22."
   },
   {
+    "id": "ad9c63f54a0b",
     "start": 726,
     "end": 732,
     "text": "Creation, choice, the division of relationships, and collapse."
   },
   {
+    "id": "2b195e9e0422",
     "start": 733,
     "end": 741,
     "text": "The repeated pattern can be broken down in many ways, and variations are welcome as we all understand the Hebrew authors slightly differently."
   },
   {
+    "id": "dd6444e9d4fa",
     "start": 742,
     "end": 751,
     "text": "Additionally, as the melody repeats beyond Genesis 22, the authors get more creative with twist and inversions that make this four-part melody too strict."
   },
   {
+    "id": "591e4c896e7c",
     "start": 752,
     "end": 755,
     "text": "However, for our purposes here, it works pretty well."
   },
   {
+    "id": "255d90f34c1a",
     "start": 756,
     "end": 757,
     "text": "The cycle goes around like a circle."
   },
   {
+    "id": "d8d27597fdb1",
     "start": 758,
     "end": 761,
     "text": "Creation, choice, division, collapse."
   },
   {
+    "id": "2b38f2718ad0",
     "start": 762,
     "end": 764,
     "text": "Creation, choice, division, collapse."
   },
   {
+    "id": "217bbe3a6252",
     "start": 765,
     "end": 772,
     "text": "Once you firmly grasp the melody, the story is from Genesis 1 through 23, will lock into place."
   },
   {
+    "id": "39850e8b2ea0",
     "start": 775,
     "end": 775,
     "text": "Patternbreakers."
   },
   {
+    "id": "07c8139fbb1a",
     "start": 776,
     "end": 785,
     "text": "Now you might be thinking that this all seems pretty gloom and doom, is life really an inevitable downward spiral that ends in a collapse?"
   },
   {
+    "id": "9beeba103c48",
     "start": 785,
     "end": 786,
     "text": "That's depressing."
   },
   {
+    "id": "3af5b114562e",
     "start": 787,
     "end": 788,
     "text": "No, of course not."
   },
   {
+    "id": "ab4aef10045a",
     "start": 789,
     "end": 793,
     "text": "This is the characteristic human pattern, not the way to life."
   },
   {
+    "id": "e6db3defc185",
     "start": 794,
     "end": 797,
     "text": "I think these authors love to make patterns just to break them."
   },
   {
+    "id": "b5b4e300610f",
     "start": 798,
     "end": 802,
     "text": "Let's look at Genesis 5 for a moment, which uses a very clear pattern."
   },
   {
+    "id": "20b2e47c3e3a",
     "start": 803,
     "end": 809,
     "text": "The text below is super long, but I bet you can see the point I'm making about pattern breakingers in about two seconds."
   },
   {
+    "id": "931265571da8",
     "start": 810,
     "end": 815,
     "text": "And Mahaloel lived 65 years, and he caused the birth of Jared."
   },
   {
+    "id": "3c4779f86127",
     "start": 816,
     "end": 821,
     "text": "And Mahaloel lived 830 years after he became the father of Jared."
   },
   {
+    "id": "0d4aa775e43e",
     "start": 822,
     "end": 824,
     "text": "And he caused the birth of sons and daughters."
   },
   {
+    "id": "3fa82c018177",
     "start": 825,
     "end": 831,
     "text": "And all the days of Mahaloel were 895 years, and he died."
   },
   {
+    "id": "8e5d7e07afe2",
     "start": 832,
     "end": 838,
     "text": "And Jared lived 162 years, and he caused the birth of Enoch."
   },
   {
+    "id": "67f6528d1d38",
     "start": 839,
     "end": 847,
     "text": "And Jared lived 800 years after he became the father of Enoch, and he caused the birth of other sons and daughters."
   },
   {
+    "id": "76a6dbc02681",
     "start": 847,
     "end": 852,
     "text": "And all the days of Jared were 962 years, and he died."
   },
   {
+    "id": "2e0b514e6d74",
     "start": 853,
     "end": 857,
     "text": "And Enoch lived 65 years, and he caused the birth of Mathusela."
   },
   {
+    "id": "7d61c8143ac1",
     "start": 857,
     "end": 864,
     "text": "And Enoch walked with God 300 years after he became the father of Mathusela."
   },
   {
+    "id": "a195871dd98a",
     "start": 864,
     "end": 871,
     "text": "And he caused the birth of sons and daughters, and all the days of Enoch were 365 years."
   },
   {
+    "id": "0e2818609354",
     "start": 871,
     "end": 877,
     "text": "And Enoch walked with God, and he was not, or God took him."
   },
   {
+    "id": "36e561b87beb",
     "start": 878,
     "end": 880,
     "text": "The point is not the pattern."
   },
   {
+    "id": "fd03ad9bfeb5",
     "start": 880,
     "end": 882,
     "text": "The point is the pattern breakers."
   },
   {
+    "id": "15bd575c7980",
     "start": 883,
     "end": 889,
     "text": "As we listened for the notes in the melody, be especially on the lookout for pattern breaker moments."
   },
   {
+    "id": "c7f1a2594f7c",
     "start": 890,
     "end": 897,
     "text": "God can work through characteristic human choices, but see what God can do with the pattern breakers."
   },
   {
+    "id": "90123dfc36fe",
     "start": 898,
     "end": 904,
     "text": "People who choose to listen to God's voice, get an opportunity to become partners in creation."
   },
   {
+    "id": "257f51890d63",
     "start": 905,
     "end": 908,
     "text": "Not just in Genesis 1 through 23, but throughout the Bible."
   },
   {
+    "id": "ce4b71f22357",
     "start": 909,
     "end": 910,
     "text": "But I'm getting ahead of myself."
   },
   {
+    "id": "b67ca8d927a3",
     "start": 911,
     "end": 913,
     "text": "First, we need to see the pattern."
   },
   {
+    "id": "6f3dbb305246",
     "start": 916,
     "end": 917,
     "text": "Melody observations."
   },
   {
+    "id": "5acbe36bc7f7",
     "start": 919,
     "end": 924,
     "text": "This middle section is the most academic, but also the heart of this guide."
   },
   {
+    "id": "d606af8cefca",
     "start": 925,
     "end": 930,
     "text": "If you are a person who spends time in biblical scholarship, to U.I.A. enjoy."
   },
   {
+    "id": "64fe235df9c7",
     "start": 931,
     "end": 937,
     "text": "However, if you are a normal person without a rich background in Bible study, then to U.I.A. you can do it."
   },
   {
+    "id": "64391844dd7b",
     "start": 938,
     "end": 942,
     "text": "Try to be like the people Paul Metin-Beria in Acts 1611."
   },
   {
+    "id": "88d9a43e825a",
     "start": 942,
     "end": 950,
     "text": "They receive the message with great egress and examine the scriptures every day to see if what Paul said was true."
   },
   {
+    "id": "c244f4e87e83",
     "start": 951,
     "end": 954,
     "text": "Genesis 1 through 7, the melody template."
   },
   {
+    "id": "b325d8cfdc2f",
     "start": 956,
     "end": 965,
     "text": "Instead of abstractly describing the characteristics of the notes, let's look at the template of the Genesis melody provided in Genesis 1 through 7."
   },
   {
+    "id": "c1305d4c8e85",
     "start": 966,
     "end": 974,
     "text": "These early chapters of Genesis are intentionally placed at the start of this massive collection as an introduction to the entire work."
   },
   {
+    "id": "bc640a55edd9",
     "start": 975,
     "end": 979,
     "text": "They will plant seeds for themes that will take volumes down path."
   },
   {
+    "id": "cdeab93a2159",
     "start": 979,
     "end": 985,
     "text": "If we allow them to properly shape our imagination and worldview, we will become better Bible readers."
   },
   {
+    "id": "9ffc61d1fc80",
     "start": 987,
     "end": 995,
     "text": "Work was necessary for the biblical authors to share God's message with us, and work is necessary to receive it today."
   },
   {
+    "id": "60cb660bd46b",
     "start": 996,
     "end": 998,
     "text": "How would Jesus have expressed that point?"
   },
   {
+    "id": "5f62a6b48306",
     "start": 999,
     "end": 1004,
     "text": "In John 4, 37-338, Jesus quotes an unusual phrase."
   },
   {
+    "id": "16d90bc74770",
     "start": 1006,
     "end": 1014,
     "text": "Thus the saying, one so's and another reaps is true, others have done the hard work, and you have reaped the benefits of their labor."
   },
   {
+    "id": "18ef95813b1a",
     "start": 1015,
     "end": 1026,
     "text": "Parables can have more than one meaning, a common Hebrew Bible technique, but for our theme study, the seed zone represents the wisdom of God planted in his word."
   },
   {
+    "id": "697624195f2d",
     "start": 1027,
     "end": 1036,
     "text": "These authors have worked with the Spirit to plant the key insights, but communication requires work from both the speaker and the listener."
   },
   {
+    "id": "c61b704658c1",
     "start": 1036,
     "end": 1045,
     "text": "We have to put in time together with the Spirit to convert these words into a relationship so that we can live in right relationship with Him."
   },
   {
+    "id": "6c4ddb230a87",
     "start": 1046,
     "end": 1056,
     "text": "The authors use analogies that we can understand like seed or light, but it all centers around taking on God's view of reality as truth."
   },
   {
+    "id": "49df5564d5c2",
     "start": 1057,
     "end": 1064,
     "text": "The only way to reap this freely given fruit is by meditating on it over time and then living it out in our lives."
   },
   {
+    "id": "d18b956073e7",
     "start": 1064,
     "end": 1071,
     "text": "Let's get started by looking for the four-part melody in Genesis 1 through 7 using the table below."
   },
   {
+    "id": "258f5d25599e",
     "start": 1072,
     "end": 1080,
     "text": "As you read the text, note that the name Elohim is yet another name for God, a bit less personal than Yahweh."
   },
   {
+    "id": "178906438cbf",
     "start": 1081,
     "end": 1085,
     "text": "Again, feel free to translate Elohim as God if it makes you feel more comfortable."
   },
   {
+    "id": "74472de6e224",
     "start": 1086,
     "end": 1091,
     "text": "Also a Ruhak is a Hebrew word which means Spirit, Wind, or Breath, more on that later."
   },
   {
+    "id": "567d871cc800",
     "start": 1093,
     "end": 1101,
     "text": "Melody Cycle 1 Creation, Genesis 1 through 2 through 3, plus 2 through 4 through 15."
   },
   {
+    "id": "242582f98f6e",
     "start": 1102,
     "end": 1113,
     "text": "After the seven-word Hebrew title of Genesis 1,1 we read about the pre-creation state of watery chaos, a standard image for nothing at that point in history."
   },
   {
+    "id": "36e6fe86db37",
     "start": 1114,
     "end": 1121,
     "text": "However, with the presence of Elohim about to act, hovering as Ruhak over the face of the waters we have hope."
   },
   {
+    "id": "ac11489c4495",
     "start": 1123,
     "end": 1133,
     "text": "Elohim speaks to create light and divides those chaos waters to bring order to the sea, sky, and land in days 1 through 3."
   },
   {
+    "id": "6e6d5e392ecc",
     "start": 1133,
     "end": 1142,
     "text": "He then fills those spaces with inhabitants in days 4 through 6, starting with the lights in the sky which are called signs."
   },
   {
+    "id": "cbe4aef1764f",
     "start": 1143,
     "end": 1149,
     "text": "He makes living beings to fill those spaces, giving them a blessing to be fruitful and multiply."
   },
   {
+    "id": "8cca9bb99295",
     "start": 1150,
     "end": 1160,
     "text": "Ultimately, God creates the human in his image, male and female he created them, which he sees as very good."
   },
   {
+    "id": "8bd9feee85fa",
     "start": 1161,
     "end": 1167,
     "text": "Finally on the seventh day, God rest, i.e. takes up residence and rules without conflict."
   },
   {
+    "id": "dcbe6f2dc5c4",
     "start": 1167,
     "end": 1176,
     "text": "In the imagination of the ancient Near East, when a ruler rest, it is a time of Shalom, peace within the land."
   },
   {
+    "id": "b9a1bf10cc55",
     "start": 1177,
     "end": 1188,
     "text": "We know this story well, thinking of it as a one-time creation event, but we need to keep reading to realize that creation is a cycle, it will repeat."
   },
   {
+    "id": "4cc33c16d817",
     "start": 1189,
     "end": 1198,
     "text": "Still in the creation section, Genesis 2, 4 through 6, offers another perspective of non-life, a barren desert without water."
   },
   {
+    "id": "55b20952aa3d",
     "start": 1199,
     "end": 1207,
     "text": "God brings about life, first via a stream, then the human, and finally trees, all in fun Hebrew wordplay."
   },
   {
+    "id": "c6a9fcb153bd",
     "start": 1208,
     "end": 1214,
     "text": "Again, God's life is present, gently breathing the breath of life into the human."
   },
   {
+    "id": "ef28dcd0e3d2",
     "start": 1216,
     "end": 1221,
     "text": "Melody cycle one choice, Genesis 2, 16 through 3, 24."
   },
   {
+    "id": "9ab4460cf947",
     "start": 1222,
     "end": 1230,
     "text": "The choice portion of the melody starts with the divine command not to eat from the tree of the knowledge of good and bad."
   },
   {
+    "id": "b162afadc342",
     "start": 1231,
     "end": 1241,
     "text": "However, between the divine command and the fall, the authors insert an example of Yahweh seeing taking building and giving in 2, 18 through 22."
   },
   {
+    "id": "6c9ce7ef004f",
     "start": 1242,
     "end": 1249,
     "text": "Unlike Yahweh, the humans see what is good in their eyes, then take, eat, and give non-life."
   },
   {
+    "id": "7b28ef674433",
     "start": 1250,
     "end": 1252,
     "text": "The inevitable consequences follow."
   },
   {
+    "id": "5e31ac6f4cae",
     "start": 1253,
     "end": 1260,
     "text": "God acknowledges the unfortunate new state of His creation, but makes some promises worth noting in the way out."
   },
   {
+    "id": "06d1216bb42a",
     "start": 1260,
     "end": 1262,
     "text": "See Genesis 3-15."
   },
   {
+    "id": "bef9ca412a1b",
     "start": 1263,
     "end": 1271,
     "text": "Melody cycle one division, Genesis 4-1 through 4-24, and 6-1 through 6-12."
   },
   {
+    "id": "d386c730091c",
     "start": 1272,
     "end": 1277,
     "text": "Outside of Eden, the next generation escalates the spiral of division."
   },
   {
+    "id": "3e5f912c5080",
     "start": 1278,
     "end": 1287,
     "text": "As predicted in Genesis 3-16, they conceive for themselves instead of receiving from God, then experience great anguish."
   },
   {
+    "id": "9c2326619905",
     "start": 1288,
     "end": 1294,
     "text": "Cain kills Abel, laym act takes two wives and murders a boy for striking him."
   },
   {
+    "id": "1529941e7afd",
     "start": 1295,
     "end": 1309,
     "text": "The sons of El Himes see and take the beautiful Tove, daughters of humanity and a parallel spiritual rebellion, wind up with the Nephilim, and the whole land is ruined by Genesis 6-12."
   },
   {
+    "id": "7c13a514d9ac",
     "start": 1310,
     "end": 1318,
     "text": "If Genesis 1 had been a singular creation event, then the whole cosmos would have been a very short, rather pointless project."
   },
   {
+    "id": "3d63aae716cf",
     "start": 1319,
     "end": 1325,
     "text": "Fortunately for us, creation life and blessing are repeated notes in God's song."
   },
   {
+    "id": "bcf54afa5d33",
     "start": 1326,
     "end": 1332,
     "text": "Melody cycle one collapse, Genesis 6-6-13 through 7-24."
   },
   {
+    "id": "9ec418d392f9",
     "start": 1333,
     "end": 1336,
     "text": "The collapse here is one we all know well."
   },
   {
+    "id": "9c81981d72a3",
     "start": 1337,
     "end": 1343,
     "text": "God brings about a great leveling act to cleanse the land via the flood."
   },
   {
+    "id": "75d4b7c0016d",
     "start": 1344,
     "end": 1349,
     "text": "This is a clear return to Genesis 1-2 pre-creation state."
   },
   {
+    "id": "7f9e0d1ce874",
     "start": 1349,
     "end": 1355,
     "text": "By the end of Genesis 7, the world is again in the same watery chaos image of nothing."
   },
   {
+    "id": "050d87e6ffbb",
     "start": 1355,
     "end": 1362,
     "text": "Minus 1 small difference, a boat covered with atonement, preserving seed."
   },
   {
+    "id": "0472ed690c3b",
     "start": 1362,
     "end": 1368,
     "text": "This symbol of God preserving life is of no small significance for you and me."
   },
   {
+    "id": "49158582c401",
     "start": 1369,
     "end": 1376,
     "text": "Noah, seven other people, and a whole bunch of animals sit and wait until Yahweh does it again."
   },
   {
+    "id": "318a8fef2f89",
     "start": 1377,
     "end": 1379,
     "text": "How long, O Lord, the poet say?"
   },
   {
+    "id": "68cf55093ba3",
     "start": 1380,
     "end": 1382,
     "text": "How long until you do it again?"
   },
   {
+    "id": "3acd7831648f",
     "start": 1385,
     "end": 1388,
     "text": "Genesis 1-7 patternbreakers."
   },
   {
+    "id": "c7f7831367cf",
     "start": 1389,
     "end": 1396,
     "text": "In the same way that Genesis 1-7 is the template for the melody, it is also the template for patternbreakers."
   },
   {
+    "id": "165c85f3e9fc",
     "start": 1397,
     "end": 1406,
     "text": "Clearly, Enoch and Noah don't follow the characteristic division in clap cycle, but there is also a delightful ski jump at the end of chapter 4."
   },
   {
+    "id": "c4dabe1b35f3",
     "start": 1407,
     "end": 1412,
     "text": "From 4-1 through 4-24 we see characteristic human choices to establish the pattern."
   },
   {
+    "id": "f95e080ee850",
     "start": 1413,
     "end": 1419,
     "text": "In those verses Eve claims to have made a man all by herself in comparison to Yahweh."
   },
   {
+    "id": "408a904b471d",
     "start": 1420,
     "end": 1430,
     "text": "The authors use clever wordplay noting only that Cain was conceived, the Hebrew word Harah, with no mention of him being a son, the Hebrew word Ben."
   },
   {
+    "id": "75e2778793e0",
     "start": 1430,
     "end": 1436,
     "text": "Cain, however, is invited by God to be a patternbreaker in the next generation."
   },
   {
+    "id": "7e01b9542e17",
     "start": 1436,
     "end": 1442,
     "text": "He can rule over sin, but instead, he too chooses the path of non-life."
   },
   {
+    "id": "670cae24c501",
     "start": 1443,
     "end": 1450,
     "text": "Then Cain's wife will also conceive, but again no mention of their child, a different Enoch, being a son."
   },
   {
+    "id": "8fca84cfc245",
     "start": 1451,
     "end": 1456,
     "text": "We have already seen where that path spirals out of control in the division section above."
   },
   {
+    "id": "705207b22859",
     "start": 1456,
     "end": 1462,
     "text": "Let's skip to verse 25, where we will see something new that you won't find on the division spiral."
   },
   {
+    "id": "f2bdaf85b7a9",
     "start": 1463,
     "end": 1474,
     "text": "In the closing section of chapter 4 verses 25 and 26, we start with intentionally repeated words from verse 1, Adam knew his wife again."
   },
   {
+    "id": "b641798e5e22",
     "start": 1475,
     "end": 1476,
     "text": "But things go different this time."
   },
   {
+    "id": "4c0d0702fc1b",
     "start": 1477,
     "end": 1486,
     "text": "First, right at this pivot, the Hebrew name for Adam changes from the Adam, I.e. the human, to just Adam, a personal name."
   },
   {
+    "id": "50258b97f4e2",
     "start": 1488,
     "end": 1496,
     "text": "Conversely, Eve's name was used in verse 1, but now she is called only Adam's wife, to emphasize their union over individuality."
   },
   {
+    "id": "4e569e9bd0b0",
     "start": 1497,
     "end": 1506,
     "text": "Next, the author's hint that something is new, by always stating that she bears a son, yellowed Ben, with no mention of her conceiving."
   },
   {
+    "id": "86510d6b482a",
     "start": 1508,
     "end": 1521,
     "text": "Genesis 4.1, now the human knew his wife Eve and she conceived and gave birth, 4.25, and Adam knew his wife again and she gave birth to a son."
   },
   {
+    "id": "06751285c8a8",
     "start": 1522,
     "end": 1531,
     "text": "Obviously, she did conceive for every birth, she clearly became pregnant at some point, but the authors don't mention it, since this birth is not all about Eve."
   },
   {
+    "id": "a3b4b7dd6580",
     "start": 1533,
     "end": 1538,
     "text": "Finally, Adam's wife shows her new perspective by giving the glory to Elohim not herself."
   },
   {
+    "id": "fe387c16fe23",
     "start": 1539,
     "end": 1546,
     "text": "She sees life as a gift to be received, instead of an act to be accomplished by herself. Then it hits you."
   },
   {
+    "id": "04534d507732",
     "start": 1547,
     "end": 1556,
     "text": "She is the first to break the pattern. She was the first to take the fruit, but she was also the first to turn back and make a different choice."
   },
   {
+    "id": "d0322f1682f2",
     "start": 1557,
     "end": 1561,
     "text": "We all fail, that's really nothing new, but we don't all turn back to God."
   },
   {
+    "id": "7187964a3653",
     "start": 1562,
     "end": 1571,
     "text": "Eve, mother of all living ones, is famous for Genesis 3, 6, through 7, but she was also the first to receive the fruit."
   },
   {
+    "id": "5b9c158a4e09",
     "start": 1572,
     "end": 1586,
     "text": "Welcome home, I say welcome home, because Eden is a place where heaven and earth overlap, a place where human and divine work together as one, yahaad in Hebrew, it has always been more than just a physical spot on the map."
   },
   {
+    "id": "2c0192cdef16",
     "start": 1587,
     "end": 1590,
     "text": "Let's bring life to the next generation together."
   },
   {
+    "id": "6aaf4cbee5d8",
     "start": 1591,
     "end": 1597,
     "text": "Here are the pattern breaker choices in the first cycle of the melody, starting with Eve."
   },
   {
+    "id": "313c95681257",
     "start": 1598,
     "end": 1611,
     "text": "Genesis 4, 25 and 26. And Adam, the personal name, not the characteristic human, knew his wife again and she gave birth to a son, and she named him Seth."
   },
   {
+    "id": "168daa144c1c",
     "start": 1612,
     "end": 1630,
     "text": "God has appointed to me another seed in place of able for Cain killed him, and to Seth, to him also a son was born, and he called his name Inosh, then it was begun to call in the name of Yahweh."
   },
   {
+    "id": "1d23f519ce54",
     "start": 1631,
     "end": 1646,
     "text": "Eve and Seth are living out only the second half of Genesis 3, 16, the necessary labor pains, instead of the greatly multiply grief of conception that we saw in 4, 1, 3, 24."
   },
   {
+    "id": "f0b200363d5b",
     "start": 1647,
     "end": 1659,
     "text": "And to the woman he said, Part 1, I will greatly multiply your grief and conception, in part 2, in grief you will birth children Galad bin."
   },
   {
+    "id": "8e944b169600",
     "start": 1660,
     "end": 1669,
     "text": "If these phrases were used only in this verse, the mystery would be impossible to unravel, but that's not how the Bible works."
   },
   {
+    "id": "84a865711fc4",
     "start": 1669,
     "end": 1677,
     "text": "The authors slowly reveal additional information as stories repeat to invite hearers to become active participants."
   },
   {
+    "id": "d66b66c2b2f2",
     "start": 1678,
     "end": 1688,
     "text": "For example, these subtle conceive, burst baris on word choices, will echo not just in chapter 4 with Eve herself, but with other mothers in Scripture."
   },
   {
+    "id": "9c68a47d31f6",
     "start": 1689,
     "end": 1695,
     "text": "To conceive is not a 100% match for pending great anguish, but it's a hint to use more than a few times."
   },
   {
+    "id": "5df9f68464e4",
     "start": 1696,
     "end": 1708,
     "text": "Consider, Abraham and Hegar conceive with Ishmael, Genesis 164, but Abraham and Sarah conceive in Barisun with Isaac, 212."
   },
   {
+    "id": "01713415fc50",
     "start": 1709,
     "end": 1722,
     "text": "David and Bathsheba initially conceive a child who dies on the seventh day, 2 Samuel 115, but later Barisun, Solomon, in 1224 through 25."
   },
   {
+    "id": "391fe22996c5",
     "start": 1723,
     "end": 1727,
     "text": "The later stories inform the earlier, Genesis 316 mystery."
   },
   {
+    "id": "c54af87c28db",
     "start": 1728,
     "end": 1735,
     "text": "As a teacher, I can identify this technique of putting an initial puzzle before students, a little mystery to figure out."
   },
   {
+    "id": "d0835c1bf1ef",
     "start": 1736,
     "end": 1744,
     "text": "These authors have intentionally crafted a learning experience to find link words and unlock a cryptic statement."
   },
   {
+    "id": "12d86c8dfcbf",
     "start": 1745,
     "end": 1760,
     "text": "Focusing on ten words at a time doesn't work. You need the greater narrative. Much like the ten words, the ten commandments, these ten Hebrew words from Genesis 316 to the woman take time and effort on pack."
   },
   {
+    "id": "b895890d6f70",
     "start": 1761,
     "end": 1770,
     "text": "With these patterns in mind, we return to Genesis 425 through 26, where Satan and Enoch are on God's chosen path."
   },
   {
+    "id": "3bf1d7dd306d",
     "start": 1770,
     "end": 1780,
     "text": "They are sons, they John 1112, who experience only necessary labor pains."
   },
   {
+    "id": "dcd92a046900",
     "start": 1781,
     "end": 1787,
     "text": "They avoid the great anguish seen in 41324 with self-made plans."
   },
   {
+    "id": "282fa360bdaa",
     "start": 1787,
     "end": 1793,
     "text": "Let's see how God will work through these pattern breaker choices and the generations that follow."
   },
   {
+    "id": "528309b18716",
     "start": 1794,
     "end": 1796,
     "text": "Genesis 522-24."
   },
   {
+    "id": "193b2e74b58f",
     "start": 1797,
     "end": 1811,
     "text": "An Enoch walked with God 300 years, and all the days of Enoch were 365 years, and Enoch walked with God, and he was not, or God took him."
   },
   {
+    "id": "933219c5a769",
     "start": 1812,
     "end": 1815,
     "text": "Genesis 6-1-75."
   },
   {
+    "id": "218df6c791b6",
     "start": 1816,
     "end": 1827,
     "text": "An Elohim said to Noah, build an ark, many cosmos, and Noah did it, according to all that Elohim had commanded him, so he did."
   },
   {
+    "id": "d0d679f4a69f",
     "start": 1828,
     "end": 1840,
     "text": "And Yahweh said to Noah, fill that space with inhabitants, and Noah did, according to all that Yahweh had commanded him, and Noah did it, that's all we needed to know."
   },
   {
+    "id": "ba528d8e43d6",
     "start": 1841,
     "end": 1849,
     "text": "God preserves a remnant, to partner with him in the next melody cycle, and the pattern breakers are that remnant."
   },
   {
+    "id": "13f2e491952d",
     "start": 1849,
     "end": 1861,
     "text": "The prophets will later develop this concept at length, but the theme is planted right here in Genesis. They will join God to rebuild the cosmos when he does it again."
   },
   {
+    "id": "ad39b935c26f",
     "start": 1864,
     "end": 1866,
     "text": "Genesis 8-11."
   },
   {
+    "id": "0d0aa4fd6c02",
     "start": 1866,
     "end": 1868,
     "text": "The second round of the melody."
   },
   {
+    "id": "e58a4376131d",
     "start": 1869,
     "end": 1878,
     "text": "Before we jump into the second round of the melody, I'd like to pause for a moment, and congratulate you for making it to the center of the center of this guide."
   },
   {
+    "id": "6cff34553da9",
     "start": 1879,
     "end": 1889,
     "text": "We find ourselves in Genesis 8-1, and it feels some bulk, as if very early in the morning, on the first day of a new week, the dawn of new creation."
   },
   {
+    "id": "7af0e0da8921",
     "start": 1890,
     "end": 1897,
     "text": "I sure hope something important happens. Sure enough, something truly remarkable and significant will happen."
   },
   {
+    "id": "de9dccfc54ab",
     "start": 1898,
     "end": 1910,
     "text": "Genesis 1 will replay in Genesis 8-1 through 9-18, but in new ways for a new generation. A pattern is not a pattern unless it repeats."
   },
   {
+    "id": "e0a14e9b09b3",
     "start": 1911,
     "end": 1918,
     "text": "So in Genesis 1-11, the introduction to the Bible, we see the cycle of life not once, but twice."
   },
   {
+    "id": "629c9e6e2fb1",
     "start": 1919,
     "end": 1933,
     "text": "The Hebrew Bible authors are quietly going to reshape the way you see the world. The Spirit has breathed into them a truth that God never stops creating life, creation, life, and blessing."
   },
   {
+    "id": "17de5ee01070",
     "start": 1934,
     "end": 1940,
     "text": "Let's reflect on their words and try to become listeners that live out, Psalm 1-1-3."
   },
   {
+    "id": "2e676807880d",
     "start": 1942,
     "end": 1949,
     "text": "The cycle begins again and 8-1, unmistakably, right in the chiastic center of the flood narrative."
   },
   {
+    "id": "b980e1739b88",
     "start": 1950,
     "end": 1956,
     "text": "Life begins with the presence of God, shown again as Ruaq, the Hebrew word that means win, breath, or presence."
   },
   {
+    "id": "c138843559ea",
     "start": 1957,
     "end": 1968,
     "text": "Additionally, we introduce a new, highly significant word, Zakar, which means not just remembered, but more accurately remembered and acted on it."
   },
   {
+    "id": "c2135ca7f02e",
     "start": 1969,
     "end": 1985,
     "text": "An Elohim remembered, Zakar, Noah, and all the living creatures, and all the beasts that were with Him in the ark, and Elohim caused a path, a win slash spirit, Ruaq, to cover the land, and the waters subsided."
   },
   {
+    "id": "6c11a12bd499",
     "start": 1986,
     "end": 1995,
     "text": "To help you compare the two about to act creation moments, here is the pre-creation state of Genesis 1-2, where the Ruaq was over the face of the waters."
   },
   {
+    "id": "07019ff54f66",
     "start": 1996,
     "end": 2005,
     "text": "Now the land was wild and waste, Tohu-Vabu, and darkness was over the face of the deep abyss, the toome."
   },
   {
+    "id": "2e863277fb71",
     "start": 2006,
     "end": 2013,
     "text": "But the breath, Ruaq, of Elohim, was hovering over the face of the waters, Hamein."
   },
   {
+    "id": "44fb8ba3da74",
     "start": 2014,
     "end": 2023,
     "text": "This guide is not a deep dive on the Holy Spirit, the third person of the Trinity, for that consider a work like Tyler Stanton's, the familiar stranger."
   },
   {
+    "id": "4c483ebb6954",
     "start": 2024,
     "end": 2041,
     "text": "However, I do want to at least point out that the Spirit did not come only after Jesus' death at Pentecost in Acts 2, the same Spirit has been present and active since page 1, doing what God does best, breathing life into His creation."
   },
   {
+    "id": "50da4301013d",
     "start": 2042,
     "end": 2050,
     "text": "By the way, props to the 16th century Bible scholars, who chose to put the first melody into exactly seven chapters, well done."
   },
   {
+    "id": "fa3afc834155",
     "start": 2051,
     "end": 2068,
     "text": "Next, Elohim commands Noah and his family to go out from the ark, blessing them Genesis 1-style, and Elohim bless Noah and his sons, and he said to them, be fruitful and multiply, fill the land."
   },
   {
+    "id": "5764a83a3426",
     "start": 2069,
     "end": 2074,
     "text": "All is good in blissful creation at the top of the mountain with God."
   },
   {
+    "id": "03c8add3ff10",
     "start": 2075,
     "end": 2079,
     "text": "However, makes an informed reader wonder what will come next, and worry."
   },
   {
+    "id": "90fad3fbb840",
     "start": 2081,
     "end": 2089,
     "text": "The authors continue the creation, choice, division of relationships, and collapse cycle, using very clear notes."
   },
   {
+    "id": "912c9fdee514",
     "start": 2090,
     "end": 2097,
     "text": "In the second pass through the melody, Genesis 8-11, notice that the authors never replay a story identically."
   },
   {
+    "id": "d24f10e4b454",
     "start": 2098,
     "end": 2104,
     "text": "Each cycle fills out the one before, quietly expanding your sense of what each note is communicating."
   },
   {
+    "id": "075947bbe637",
     "start": 2105,
     "end": 2111,
     "text": "By the end of only two laps, you reflect back on Genesis 1-7 in ways that you couldn't have seen before."
   },
   {
+    "id": "a5f10b7f947a",
     "start": 2112,
     "end": 2117,
     "text": "Melody, cycle 2 creation, Genesis 8-1-9-18."
   },
   {
+    "id": "15e6b493a4fb",
     "start": 2118,
     "end": 2129,
     "text": "We again hear creation notes of blessing, but with a new twist, the humans and animals are partnering with God in the creation process."
   },
   {
+    "id": "7264dade2644",
     "start": 2129,
     "end": 2141,
     "text": "In Genesis 1-27, when Elohim created the image of God, the Amago Day in Latin, the authors used the phrase, male and female, he created them."
   },
   {
+    "id": "a3709543531a",
     "start": 2141,
     "end": 2149,
     "text": "That phrase in Hebrew is Zakarun Kevah, and it became a creation note that we should listen for."
   },
   {
+    "id": "836e56dd257f",
     "start": 2150,
     "end": 2159,
     "text": "In this new creation story, Noah is bringing out the animals who were put into the ark Zakarun Kevah, male and female."
   },
   {
+    "id": "a7a18e4bb403",
     "start": 2160,
     "end": 2165,
     "text": "The repeated words are creation vocabulary that the authors didn't want you to miss."
   },
   {
+    "id": "97f66401a9db",
     "start": 2165,
     "end": 2174,
     "text": "In fact, they repeat the phrase four times when the animals board the boat. Zakarun Kevah, Zakarun Kevah."
   },
   {
+    "id": "d2c46579d949",
     "start": 2175,
     "end": 2187,
     "text": "By the way, we are stepping around the rabbit hole where the letters for Zakar mean both male, child from this phrase, and Zakar remembered in Genesis 8-1, too many hyperlinks."
   },
   {
+    "id": "622c1848cfba",
     "start": 2188,
     "end": 2192,
     "text": "But a listener in Hebrew would certainly hear the Zakar creation notes."
   },
   {
+    "id": "eae10f87c05b",
     "start": 2193,
     "end": 2202,
     "text": "These new creation events continue in blissful harmony with a sacrifice, covenants, and a sign of the covenant, the rainbow."
   },
   {
+    "id": "0ed244e9bce3",
     "start": 2203,
     "end": 2213,
     "text": "What could go wrong? However, we know the cycle will repeat since Genesis 8-21 warns us that the human heart has not changed."
   },
   {
+    "id": "72e6ea1c39d3",
     "start": 2214,
     "end": 2228,
     "text": "Melody Cycle 2 Choice, Genesis 9-19-29 The next generation repeats the sins of the old as the choice notes begin to play in the new Eden space."
   },
   {
+    "id": "0bc7a29a3e44",
     "start": 2229,
     "end": 2236,
     "text": "Noah takes the wine, and in a illicit way by getting drunk, then he uncovers himself in the middle of his tent."
   },
   {
+    "id": "c841e88a50d3",
     "start": 2237,
     "end": 2244,
     "text": "These are verbal echoes of Adam and Eve taking the fruit in the middle of the garden, then realizing they were naked."
   },
   {
+    "id": "3983bc66d15e",
     "start": 2244,
     "end": 2248,
     "text": "Finally, Ham saw the nakedness of his father."
   },
   {
+    "id": "8484439fd966",
     "start": 2249,
     "end": 2256,
     "text": "In Hebrew a man's nakedness is his wife, Leviticus 187-8 spells this out plainly."
   },
   {
+    "id": "a04a50135312",
     "start": 2256,
     "end": 2260,
     "text": "The act is so terrible that the authors use a common Hebrew euphemism."
   },
   {
+    "id": "31f09c4c4451",
     "start": 2261,
     "end": 2269,
     "text": "Despite our modern debates and mystery, seeing the nakedness is a standard phrase stating that Ham had sex with his father's wife."
   },
   {
+    "id": "11f4a4328ab4",
     "start": 2269,
     "end": 2275,
     "text": "The word choice ties this unthinkable moment into the seeing what is good in his eyes, theme."
   },
   {
+    "id": "05c0eeafa9be",
     "start": 2277,
     "end": 2286,
     "text": "Translators face an impossible task here. They need to maintain the seeing hyperlink, discern the idioms, and keep it to five words or fewer."
   },
   {
+    "id": "f1d5057b2cd8",
     "start": 2287,
     "end": 2300,
     "text": "So they usually just follow the pattern of prior translations through their hands in the air and give a literal word for word translation, leaving interpretation up to the reader, which is fine let commentaries explain it."
   },
   {
+    "id": "857c8f2f7d73",
     "start": 2300,
     "end": 2312,
     "text": "Next, much like God did in the garden exit, this new state results in Noah giving blessings to Yahweh, the Elohim of Shem, and curses to Canaan."
   },
   {
+    "id": "cc8596a67b84",
     "start": 2312,
     "end": 2314,
     "text": "Wait, Canaan? Where did Ham go?"
   },
   {
+    "id": "3cf5c6e278a5",
     "start": 2315,
     "end": 2329,
     "text": "Canaan, the father of the Canaanites, was Ham's fourth and final son, but the authors don't explain the generational jump at all, instead you are focused to use your imagination to fill in the gap."
   },
   {
+    "id": "7e19c6355d13",
     "start": 2331,
     "end": 2336,
     "text": "Melody, cycle 2, division, Genesis 9, 22 through 11-5."
   },
   {
+    "id": "e30f90155ad8",
     "start": 2337,
     "end": 2342,
     "text": "It is no surprise that division comes next. In fact, it has already begun."
   },
   {
+    "id": "5f1f0460aafe",
     "start": 2343,
     "end": 2350,
     "text": "Ham's horrific power play fractured the family, causing the three brothers to divide into the nation."
   },
   {
+    "id": "7a1ab700dfcf",
     "start": 2351,
     "end": 2358,
     "text": "The spiral continues with Nimrod building Babylon, the icon for communal evil choices used throughout the Bible."
   },
   {
+    "id": "4d61a619498c",
     "start": 2359,
     "end": 2372,
     "text": "Finally, Yahweh does a thorough investigation of the situation in Genesis 11-5, and Yahweh came down to see the city and the tower that the sons of humanity built."
   },
   {
+    "id": "ff8bd51692f8",
     "start": 2373,
     "end": 2375,
     "text": "Dangerous notes are beginning to play."
   },
   {
+    "id": "4a6df5800324",
     "start": 2376,
     "end": 2381,
     "text": "Melody, cycle 2, collapse, Genesis 11-7 through 9."
   },
   {
+    "id": "7ae037f3a98f",
     "start": 2381,
     "end": 2390,
     "text": "In this cycle, the collapse is Yahweh scattering the civilization of Babylon at the Tower of Babylon, 11-9."
   },
   {
+    "id": "6ed6c59e1811",
     "start": 2391,
     "end": 2395,
     "text": "From there, Yahweh scattered them upon the face of all the land."
   },
   {
+    "id": "b7cde88a67fb",
     "start": 2396,
     "end": 2403,
     "text": "In our generation, scattering a nation doesn't carry the same weight, but in this context, these are collapse notes."
   },
   {
+    "id": "f3070a8ffe22",
     "start": 2404,
     "end": 2414,
     "text": "For example, in 9.19, the authors described the scattering using the Hebrew word in the Fats, which Psalm 2.9 uses to shatter like a pot."
   },
   {
+    "id": "2f5fd6d65709",
     "start": 2416,
     "end": 2421,
     "text": "So God shattered the people of Babylon like a pot onto the face of the land."
   },
   {
+    "id": "18ebdbc9223e",
     "start": 2422,
     "end": 2432,
     "text": "God has initiated the collapse and both cycles so far to set the stage for new life, but that will not always be the case as the melody continues."
   },
   {
+    "id": "8c3f63645e8f",
     "start": 2433,
     "end": 2442,
     "text": "With only two passes through the melody, we can already hear many distinctive notes that emerge from Genesis 1-11, here only a few."
   },
   {
+    "id": "abe29e7c791e",
     "start": 2443,
     "end": 2448,
     "text": "From creation, we hear Rua, blessing and sign."
   },
   {
+    "id": "075d113da1ef",
     "start": 2448,
     "end": 2454,
     "text": "In the choice, we hear Saul, good, which is Tove, and took."
   },
   {
+    "id": "27e1bd737617",
     "start": 2455,
     "end": 2460,
     "text": "In the division, we have an escalating spiral, and in the collapse, we have a flood moment."
   },
   {
+    "id": "ae776b33655b",
     "start": 2461,
     "end": 2475,
     "text": "Enjoyable sidequest, go read the first two chapters of Luke, listening for creation notes of spirit, blessing and signs, there more than you might guess, and you'll wonder how you missed them before."
   },
   {
+    "id": "d96e731acbaa",
     "start": 2477,
     "end": 2488,
     "text": "Genesis 8-11, Patternbreakers Who are the patternbreakers in the second round of the melody, and how will God preserve life through them?"
   },
   {
+    "id": "33b29e57b99e",
     "start": 2489,
     "end": 2493,
     "text": "It is a shorter melody, so there are fewer patternbreakers, but we still see a few."
   },
   {
+    "id": "b0eb1e4dfb32",
     "start": 2494,
     "end": 2499,
     "text": "We have Noah, who builds an altar and makes it going up offering to Yahweh."
   },
   {
+    "id": "cdd81dba4f96",
     "start": 2499,
     "end": 2503,
     "text": "Yahweh smells the soothing smell and responds and blessing."
   },
   {
+    "id": "111f2f121e21",
     "start": 2504,
     "end": 2508,
     "text": "This sacrifice note is mirrored in other rounds of the melody in creative ways."
   },
   {
+    "id": "1aa3aabd7e0f",
     "start": 2509,
     "end": 2511,
     "text": "The next patternbreakers are Shem and Yapa."
   },
   {
+    "id": "b2dcace0fce2",
     "start": 2512,
     "end": 2516,
     "text": "They do the opposite of ham and cover their father's nakedness."
   },
   {
+    "id": "fe16d61d21d1",
     "start": 2517,
     "end": 2520,
     "text": "This time not seeing their father's nakedness is simple and literal."
   },
   {
+    "id": "c0ccdc35925e",
     "start": 2520,
     "end": 2525,
     "text": "These authors use clever wordplay even when the subject matter makes us feel uncomfortable."
   },
   {
+    "id": "a3040112b742",
     "start": 2526,
     "end": 2531,
     "text": "Suttles cemeteries, through repeated words, help readers see the inversion."
   },
   {
+    "id": "989285d176f3",
     "start": 2532,
     "end": 2541,
     "text": "Afterwards, Noah blesses Yahweh the Elohim of Shem, and again a rimmna is preserved through Shem's line."
   },
   {
+    "id": "3bf3c044f6c3",
     "start": 2542,
     "end": 2548,
     "text": "Genesis 11 10-26 gives another 10-generation bridge, Miring Chapter 5."
   },
   {
+    "id": "9427669f06a4",
     "start": 2548,
     "end": 2554,
     "text": "It is the 10th, Avrum, who will partner with God to start the next melody cycle."
   },
   {
+    "id": "5eb0951fe52b",
     "start": 2555,
     "end": 2558,
     "text": "Will Avrum be the one who will crush the head of the snake?"
   },
   {
+    "id": "ceb31137c24d",
     "start": 2562,
     "end": 2568,
     "text": "Genesis 11 27-22 19, cycles 3-7 with Avrum."
   },
   {
+    "id": "88cdd44d3661",
     "start": 2570,
     "end": 2578,
     "text": "With Genesis 1-11 complete, we come to the next major section of Genesis and start the third cycle of the melody."
   },
   {
+    "id": "05c639faf3d7",
     "start": 2579,
     "end": 2585,
     "text": "It opens with a title in Genesis 11-27, now these are the generations of Tarak."
   },
   {
+    "id": "5890b46e3927",
     "start": 2586,
     "end": 2593,
     "text": "Then, following the Genesis 1 pattern, we have a new pre-creation state in 11-28-32."
   },
   {
+    "id": "de78bfe1a6c2",
     "start": 2594,
     "end": 2599,
     "text": "This time, the symbols for non-life are not watery chaos or a dry desert."
   },
   {
+    "id": "920278c9d2e8",
     "start": 2600,
     "end": 2605,
     "text": "Instead, if you read them with eyes looking for symbols of death and disorder, you will notice."
   },
   {
+    "id": "08f159571a2f",
     "start": 2606,
     "end": 2609,
     "text": "And Heron died before his father, Tarak."
   },
   {
+    "id": "b9f7ebc1d857",
     "start": 2610,
     "end": 2613,
     "text": "And Sarah was barren, she had no child."
   },
   {
+    "id": "f4786253b86b",
     "start": 2613,
     "end": 2619,
     "text": "And they went out to go to the land of Canaan, and they went as far as Heron."
   },
   {
+    "id": "fa0343ad2259",
     "start": 2620,
     "end": 2622,
     "text": "And Tarak died in Heron."
   },
   {
+    "id": "91f91a0def43",
     "start": 2623,
     "end": 2633,
     "text": "Without God's presence, the wild and waste from Genesis 1-2 is depicted with these new symbols of pre-creation non-life."
   },
   {
+    "id": "7deba00708f9",
     "start": 2634,
     "end": 2645,
     "text": "Genesis 12-1 then starts the creation section of the melody with Yahweh speaking to Avrum, who steps into the role of Adam and Noah."
   },
   {
+    "id": "a9aff3ea0f2a",
     "start": 2646,
     "end": 2654,
     "text": "In this generation, He will partner with God to once again bring about creation, life, and blessing."
   },
   {
+    "id": "46c2c0629381",
     "start": 2655,
     "end": 2659,
     "text": "And Yahweh said to Avrum, get yourself going."
   },
   {
+    "id": "dc2f53797637",
     "start": 2660,
     "end": 2666,
     "text": "It is a wonderful and significant speech, but a bit long for this guide. Go read it."
   },
   {
+    "id": "9a52e20b3659",
     "start": 2666,
     "end": 2671,
     "text": "It calls Avrum to come out, much like Noah was called out of the ark."
   },
   {
+    "id": "cd37741f7895",
     "start": 2672,
     "end": 2681,
     "text": "Then Yahweh expands the new creation promise, stating, in you, all the families of the land will find blessing."
   },
   {
+    "id": "08621ad5ba10",
     "start": 2682,
     "end": 2688,
     "text": "Verses 4 and 5 then tell another journey story, but now with God present."
   },
   {
+    "id": "9d5f9fdf9b7a",
     "start": 2689,
     "end": 2694,
     "text": "Interestingly, this second journey was perhaps the same trip, CX-72."
   },
   {
+    "id": "ab3fc42667e9",
     "start": 2695,
     "end": 2704,
     "text": "This reminds me of Genesis 1-2, where darkness was over the face of the Tahom, the waters of death, but the spirit of Elhim was hovering over the face of the waters."
   },
   {
+    "id": "ebf1ac6d0c71",
     "start": 2705,
     "end": 2713,
     "text": "Those might be the same physical states, just described first without God's presence, and then with it."
   },
   {
+    "id": "50405429023c",
     "start": 2713,
     "end": 2718,
     "text": "The difference is not what you would see with your eyes. The difference is God."
   },
   {
+    "id": "978c14f1ce70",
     "start": 2720,
     "end": 2738,
     "text": "Next, Avrum journeys throughout the land with Yahweh and Genesis 12-6-9, much like Adam and Eve, walk with God in the windy part of the day, and inform reader enjoys the bliss of creation notes, but is again worried about what will happen next."
   },
   {
+    "id": "fcf9aa8f6fd1",
     "start": 2739,
     "end": 2748,
     "text": "Yahweh makes it clear, unconditioned declaration, and Genesis 12-7, to your seed, I will give this land."
   },
   {
+    "id": "e88e32d7ac63",
     "start": 2749,
     "end": 2759,
     "text": "Will Avrum trust and obey, staying in the land that Yahweh has promised? You already know. You have been shaped by the melody without even realizing it."
   },
   {
+    "id": "a98e622ffd17",
     "start": 2759,
     "end": 2772,
     "text": "The cycle will continue, as long as the human heart is unchanged, but God will continue to preserve life through it all. The one who is does not change."
   },
   {
+    "id": "9bb9c9393e41",
     "start": 2773,
     "end": 2787,
     "text": "We could continue discussing the melody with the collapse in Egypt of seeing, taking, and giving, than a division of relationships with the brothers, Avrum, and his nephew, lots, followed by a collapse of four kings sweeping away five."
   },
   {
+    "id": "d6acd232acc4",
     "start": 2788,
     "end": 2806,
     "text": "Instead of continuing through the cycle in a linear way from this point, which is already getting pretty lengthy, let's mention only the collapse moments that mark the first seven cycles of Genesis 1-22, working through each full cycle with your own group is worth your time."
   },
   {
+    "id": "23812bbbcfdf",
     "start": 2806,
     "end": 2819,
     "text": "This story takes a much closer look, at one person, and we see the complexity of humans, as we are patternbreakers one moment, then go right back to being characteristic 10 seconds later."
   },
   {
+    "id": "9793982d464c",
     "start": 2820,
     "end": 2824,
     "text": "The creative twist will be surprising and rewarding as you meditate on the melody."
   },
   {
+    "id": "4ece23f8d927",
     "start": 2824,
     "end": 2835,
     "text": "The seven collapse stories of Genesis 1-22 are, melody cycle 1 collapse, Genesis 7-17-24, the flood."
   },
   {
+    "id": "1c8e627d8be3",
     "start": 2836,
     "end": 2854,
     "text": "And he wiped away every standing thing that was upon the face of the land, from humanity to animals, took creepers into birds of the skies, and they were wiped away from the land, and only Noah was left remaining, and those with him in the ark."
   },
   {
+    "id": "3f5909d6f038",
     "start": 2855,
     "end": 2860,
     "text": "Melody cycle 2 collapse, Genesis 11-8-9, the scattering."
   },
   {
+    "id": "9098974b7ec6",
     "start": 2862,
     "end": 2872,
     "text": "And Yahweh scattered them from upon the face of all the land, and they stopped building the city. Therefore its name was called Babylon, Babylon."
   },
   {
+    "id": "078ebbbaf9c3",
     "start": 2873,
     "end": 2882,
     "text": "Because their Yahweh made Babylon of the language of all the land, and from their Yahweh scattered them from upon the face of all the land."
   },
   {
+    "id": "975af4af8aef",
     "start": 2883,
     "end": 2890,
     "text": "Melody cycle 3 collapse, Genesis 14-1-12, Sodom number 1."
   },
   {
+    "id": "eaa59e93be72",
     "start": 2891,
     "end": 2899,
     "text": "Four kings from Mesopotamia wage war against five kings, which included the people, possessions, and food of Sodom and Gomorrah."
   },
   {
+    "id": "8516b4a76cd6",
     "start": 2900,
     "end": 2910,
     "text": "Abrams nephew Lot is taken in the process. This is our first collapse of human origin, but the flood language remains the same as they sweep away."
   },
   {
+    "id": "b4696094394d",
     "start": 2911,
     "end": 2921,
     "text": "Meanwhile, Abram is symbolically in the ark, but then goes out with 318 men, and God's help to restore life."
   },
   {
+    "id": "abf4b1e11f73",
     "start": 2923,
     "end": 2929,
     "text": "Melody cycle 4 collapse, Genesis 16-6, Hagar number 1."
   },
   {
+    "id": "f060b6aaf7e8",
     "start": 2931,
     "end": 2939,
     "text": "Our rate victim, Pregnance, fleeing in the wilderness, with nowhere to go, and no human that loves her in the world."
   },
   {
+    "id": "004fcfaac2f4",
     "start": 2940,
     "end": 2943,
     "text": "Only Yahweh sees this Egyptian slave girl."
   },
   {
+    "id": "2d6d7d1184ff",
     "start": 2944,
     "end": 2952,
     "text": "In this fourth cycle of the Melody, the choice, division of relationships, and collapse happens in only six verses in 16-1-6."
   },
   {
+    "id": "e34bfde2b92b",
     "start": 2953,
     "end": 2960,
     "text": "It's an explosion, where these authors can replay the whole story with very few words once you know what to listen for."
   },
   {
+    "id": "a85471aa841d",
     "start": 2961,
     "end": 2973,
     "text": "A single choice, by Sarah I and Abram, to take their Egyptian slave girl Hagar causes a violent division of every relationship, leading to a very sudden collapse."
   },
   {
+    "id": "07f87db759af",
     "start": 2974,
     "end": 2990,
     "text": "God, however, enters our mess, sees Hagar in the wilderness, and restores life, in ways that feel interestingly compromised, making the best of a broken situation, freed this in depth Hagar article for more insights."
   },
   {
+    "id": "f8705861c356",
     "start": 2991,
     "end": 2999,
     "text": "Melody cycle 5 collapse, Genesis 19-15-29, Sodom number 2."
   },
   {
+    "id": "a47ea79dcac8",
     "start": 2999,
     "end": 3007,
     "text": "And Yahweh caused it to rain over Sodom and over Gomorrah, sulfur and fire from Yahweh from the skies."
   },
   {
+    "id": "287ed4f2f7bf",
     "start": 3008,
     "end": 3015,
     "text": "The notes of this culminating collapse can't be missed, as it uses a flood of words to connect the Melodies."
   },
   {
+    "id": "d2fb599c5df0",
     "start": 3016,
     "end": 3031,
     "text": "Note where the end of this story is that Lot and his family are saved due to Yahweh's mercy, 1916, and the phrase Yahweh remembered as a car Abram was used in 1929 when Abram wasn't even there."
   },
   {
+    "id": "9bbe947ed253",
     "start": 3032,
     "end": 3035,
     "text": "These authors don't use words for no reason."
   },
   {
+    "id": "a47a4554b7e3",
     "start": 3037,
     "end": 3043,
     "text": "Melody cycle 6 collapse, Genesis 21-14-16, Hagar number 2."
   },
   {
+    "id": "b07d909060bd",
     "start": 3045,
     "end": 3055,
     "text": "Hagar is this time sent into the wilderness with Ishmael, her most likely 17-year-old boy, Lad, the Hebrew word NAR."
   },
   {
+    "id": "ca258942e117",
     "start": 3056,
     "end": 3064,
     "text": "She is a slave girl no longer, and has her son with her, but the water runs dry and death seems inevitable."
   },
   {
+    "id": "714497b9fc9b",
     "start": 3065,
     "end": 3069,
     "text": "Does this remind you of Genesis 25, a lifeless desert with no water?"
   },
   {
+    "id": "7040638e9714",
     "start": 3070,
     "end": 3082,
     "text": "But Elohim listens to the voice of the NAR, a fun wordplay on the meaning of Ishmael's name, converting collapse into creation once more."
   },
   {
+    "id": "7479edc6815c",
     "start": 3082,
     "end": 3088,
     "text": "The turning point is a messenger of Elohim calling to Hagar from the skies."
   },
   {
+    "id": "752111e0234a",
     "start": 3088,
     "end": 3095,
     "text": "Hagar is told not to be afraid, but to get up and take the lad with her hand."
   },
   {
+    "id": "a31d09a6acb4",
     "start": 3095,
     "end": 3102,
     "text": "Elohim will make him into a great nation, sounds familiar? The same promise was given to Abram."
   },
   {
+    "id": "aca91aa788a9",
     "start": 3103,
     "end": 3110,
     "text": "Elohim opened her eyes, and she saw a well of water at Badr Shiva, the well of seven."
   },
   {
+    "id": "828e392ac895",
     "start": 3110,
     "end": 3115,
     "text": "She fills the water skin and gives life to the lad as well."
   },
   {
+    "id": "4befc2e5918e",
     "start": 3115,
     "end": 3125,
     "text": "Not a single word is unimportant, as Hagar, the non-chosen, becomes an unexpected partner in creation, life, and blessing."
   },
   {
+    "id": "41ba1db399e8",
     "start": 3126,
     "end": 3133,
     "text": "Melody, cycle 7 collapse, Genesis 22-1-10, the binding of Isaac."
   },
   {
+    "id": "e75375f04553",
     "start": 3134,
     "end": 3146,
     "text": "The seventh collapse is told one syllable at a time as Avraham sends out his hand and takes the eater, the knife, to slay his son."
   },
   {
+    "id": "44702fb882ad",
     "start": 3148,
     "end": 3158,
     "text": "This collapse is brought about by God's command, which includes the words, get yourself going, precisely mirroring the initial calling of Abram."
   },
   {
+    "id": "48dd65a8f9e1",
     "start": 3159,
     "end": 3165,
     "text": "Hyperlinking all the way back to the start of his journey hints that everything in between has been leading up to this moment."
   },
   {
+    "id": "20072bca4da9",
     "start": 3166,
     "end": 3178,
     "text": "Avraham's struggle to trust God is put to the ultimate test, and God's song is again at the precipice of non-life as the promise seed is bound on the altar."
   },
   {
+    "id": "af41d79278ad",
     "start": 3178,
     "end": 3184,
     "text": "When we open the pages to this collapse, we find quite a bit more than just a flood."
   },
   {
+    "id": "11bd6dc948d6",
     "start": 3184,
     "end": 3193,
     "text": "The seventh collapse necessitates a more in-depth discussion to make sure we all see a bit more of what these authors are communicating."
   },
   {
+    "id": "e7ad3064cd66",
     "start": 3195,
     "end": 3199,
     "text": "Part 3. The Melody points to Jesus."
   },
   {
+    "id": "45de54f6c9e1",
     "start": 3200,
     "end": 3208,
     "text": "Without really planning it, we'll carefully study the seventh melody, and something will happen, where the story naturally turns to Jesus."
   },
   {
+    "id": "7607b1615578",
     "start": 3209,
     "end": 3211,
     "text": "Let's ride the wave together."
   },
   {
+    "id": "1f5c03f26b5a",
     "start": 3212,
     "end": 3215,
     "text": "The seventh collapse, Avraham's test."
   },
   {
+    "id": "612ab49018e8",
     "start": 3216,
     "end": 3224,
     "text": "As you might have suspected, the seventh collapse and the melody and the creation moments after are rather significant."
   },
   {
+    "id": "54918b2482c6",
     "start": 3224,
     "end": 3234,
     "text": "Without even knowing the rest of the story, a careful reader of the Hebrew Bible would know that when this melody repeats, it will reveal God in a major way."
   },
   {
+    "id": "ed2ee0f8b0ff",
     "start": 3235,
     "end": 3248,
     "text": "Indeed, the concept of the melody and the test are two different topics, but they are so interwoven here that we have no choice but to jump in to Genesis 221 through 19 with both feet."
   },
   {
+    "id": "9b3d1b02b31b",
     "start": 3248,
     "end": 3252,
     "text": "Take a moment to read those 19 verses again, then we'll discuss."
   },
   {
+    "id": "a351a6dd8ffb",
     "start": 3254,
     "end": 3261,
     "text": "In the text below, the name Isaac is written as Yitzhak to help us more faithfully pronounce the original name."
   },
   {
+    "id": "7d5e75e01208",
     "start": 3262,
     "end": 3269,
     "text": "And it came about after these things that Elohim tested Avraham."
   },
   {
+    "id": "e6c757ebdf4a",
     "start": 3270,
     "end": 3275,
     "text": "And he said to him, Avraham, and he said, look, it's me."
   },
   {
+    "id": "10af694b099a",
     "start": 3275,
     "end": 3286,
     "text": "And he said, please take your son, your only one whom you love, Yitzhak, and get yourself going to the land of Moriah, seeing."
   },
   {
+    "id": "361fb59500e6",
     "start": 3287,
     "end": 3294,
     "text": "And make him go up there as a going up offering on one of the mountains which I will say to you."
   },
   {
+    "id": "2c53ab049523",
     "start": 3295,
     "end": 3314,
     "text": "And Avraham rose early in the morning, and he bound up his donkey, and he took to of his young men with him, and Yitzhak his son, and he split the wood of the going up offering as he arose, and he went to the place Elohim said to him."
   },
   {
+    "id": "4009ebcbebf1",
     "start": 3315,
     "end": 3323,
     "text": "On the third day, then Avraham lifted his eyes and he saw the place from a distance."
   },
   {
+    "id": "f0f394705522",
     "start": 3324,
     "end": 3337,
     "text": "And Avraham said to his young men, sit yourselves here with the donkey, and I and the young boy, we will go there, and we will worship, and we will return to you."
   },
   {
+    "id": "aefe4e0239ce",
     "start": 3338,
     "end": 3354,
     "text": "And Avraham took the wood of the going up offering, and he placed upon Yitzhak his son, and he took in his hand the fire, and the eater, the knife, and the two of them went together as one."
   },
   {
+    "id": "2d749b77becb",
     "start": 3355,
     "end": 3370,
     "text": "And Yitzhak said to Avraham his father, and he said, my father, and he said, look, it's me, my son, and he said, look, the fire in the wood, but where is the sheep for the going up offering?"
   },
   {
+    "id": "6f08faa801d2",
     "start": 3371,
     "end": 3382,
     "text": "And Avraham said, Elohim will see to it, the sheep for the going up offering my son, and the two of them went together as one."
   },
   {
+    "id": "fa13fc643189",
     "start": 3384,
     "end": 3399,
     "text": "And they went to the place which Elohim said to him, and Avraham built there an altar, and he arranged the wood, and he bound up Yitzhak his son, and he placed him upon the altar, a top the wood."
   },
   {
+    "id": "dfe4527d6361",
     "start": 3399,
     "end": 3407,
     "text": "And Avraham sent out his hand, and he took the eater, the knife, to slay his son."
   },
   {
+    "id": "41092e0640a7",
     "start": 3410,
     "end": 3429,
     "text": "And the messenger of Yahweh called to him from the skies, and he said, Avraham, Avraham, and he said to him, look, it's me, and he said, don't send out your hand towards the young one, and don't do anything to him, because I know that you are one."
   },
   {
+    "id": "82cf51d45b61",
     "start": 3431,
     "end": 3436,
     "text": "And you didn't withhold your son, your only one for me."
   },
   {
+    "id": "351a203db60a",
     "start": 3437,
     "end": 3454,
     "text": "And Avraham lifted his eyes, and he saw, and looked, a ram afar, caught in a bramble by its horns, and Avraham went, and he took the ram, and he made it go up as a going up offering in the place of his son."
   },
   {
+    "id": "e572d9a4c448",
     "start": 3455,
     "end": 3465,
     "text": "And Avraham called the name of that place, Yahweh will see to it, which is why today it is said, on the mountain of Yahweh it will be seen to."
   },
   {
+    "id": "9dd25c0ecd62",
     "start": 3466,
     "end": 3482,
     "text": "And the messenger of Yahweh called to Avraham a second time from the skies, and he said, I swear and oath, by myself, utterance of Yahweh, on account to the fact that you did this thing,"
   },
   {
+    "id": "70558ce05b2b",
     "start": 3482,
     "end": 3507,
     "text": "you did not withhold your son, your only one, that I will certainly bless you, and I will certainly multiply your seed, like the stars of the skies, and like the sand upon the edge of the sea, and your seed will inherit the gate of their enemies, and all the nations of the land will find blessing in your seed."
   },
   {
+    "id": "72eee146b130",
     "start": 3507,
     "end": 3525,
     "text": "On the heel of the fact that you listened to my voice, and Avraham returned to his young men, and they arose, and they went, together as one, to bear Shava, the well of seven, and Avraham dwelt in bear Shava."
   },
   {
+    "id": "12aa18992552",
     "start": 3527,
     "end": 3534,
     "text": "The clap opens with a clear title in 221 stating that Avraham is tested."
   },
   {
+    "id": "fba31b1e0b8d",
     "start": 3535,
     "end": 3553,
     "text": "When you think tests try not to imagine an experience that, when you think tests try to imagine an experience that reveals the truth, not a stressful exam with right and wrong answers, it reveals what is already present through action."
   },
   {
+    "id": "b06e4f673211",
     "start": 3553,
     "end": 3565,
     "text": "For example, Noah was called righteous in 6-9 by the author, but he still had to actually build the ark in 6-22, and Yahweh seized the truth in 7-1."
   },
   {
+    "id": "6ef02cce8f19",
     "start": 3566,
     "end": 3581,
     "text": "Likewise, Avraham was called righteous in 15-6, but he would still have to go through his test in Genesis 22. God is giving him quest to reveal truth, not tempting him to do evil, there is a difference."
   },
   {
+    "id": "13db051e578a",
     "start": 3583,
     "end": 3596,
     "text": "He is asking him to trust in his wisdom beyond anything he can see with his eyes. It is clearly not a test God would give you or me, but the test fits the man if you reflect on Avraham's whole story."
   },
   {
+    "id": "70ae87b39a3d",
     "start": 3597,
     "end": 3608,
     "text": "Jesus illustrated that test are specific to a person when he spoke to the rich young ruler. That man's test was based on the thing that separated him from God, as well."
   },
   {
+    "id": "de3b5dd42f07",
     "start": 3608,
     "end": 3622,
     "text": "He needed to trust God and give way all he had to the poor, then follow Jesus. In his case it only revealed his inability to take a radical step of trust, and he went away downcast."
   },
   {
+    "id": "6d64515038e5",
     "start": 3623,
     "end": 3636,
     "text": "When God chose Father Abraham to initiate his restoration plan, he knew exactly what test would reveal him, and he knew that Avraham would trust his voice."
   },
   {
+    "id": "3a393631fe7c",
     "start": 3637,
     "end": 3653,
     "text": "In the same way, the Father knew what test would reveal the Son, and he trusted the Son to complete it. That test reveals God to us. Consider Psalm 2231 and John 316."
   },
   {
+    "id": "3372de9ff654",
     "start": 3654,
     "end": 3674,
     "text": "The hyperlinks from Genesis 22 to Jesus are impossible to miss. It is a test for both the Father and the Son. However, they traveled together perfectly aligned, both before and after all the details are known, the phrase and the two of them went together as one."
   },
   {
+    "id": "5acad27f2729",
     "start": 3674,
     "end": 3686,
     "text": "Yehad in Hebrew is repeated three times. Isaac put the wood on his back and walked with his father at the same physical place where Jesus will later be lifted up on the cross."
   },
   {
+    "id": "e6d7bee12693",
     "start": 3687,
     "end": 3694,
     "text": "Keep in mind that all of this was written hundreds of years before Jesus ever walked the earth. That's worth a long walk in a cup of tea."
   },
   {
+    "id": "c6ec0a0b9c3d",
     "start": 3695,
     "end": 3711,
     "text": "Finally, Avraham's collapse and Jesus' collapse in the same way, the Son is returned to life. Avraham is revealed, Elohim sees, and a going up offering of a ram substitutes for Avraham's offspring."
   },
   {
+    "id": "6dd19e0705fb",
     "start": 3712,
     "end": 3719,
     "text": "As always, God makes sure that creation, life, and blessing have the final say over a collapse."
   },
   {
+    "id": "5bfdf0dd12b3",
     "start": 3720,
     "end": 3735,
-    "text": "Before we leave this story, let's consider what it might have meant to Jesus. What thoughts raced through Jesus' head as he mentally recounted the story in the Garden of Cassimony? And when did he fully grasp the details?"
+    "text": "Before we leave this story, let's consider what it might have meant to Jesus. What thoughts raced through Jesus' head as he mentally recounted the story in the Garden of Gethsemane? And when did he fully grasp the details?"
   },
   {
+    "id": "a1ba878bac70",
     "start": 3736,
     "end": 3745,
     "text": "John the Baptist publicly named Jesus as the Lamb of God in John 129. I think Jesus knew fully what that meant."
   },
   {
+    "id": "5adbd44800ba",
     "start": 3746,
     "end": 3755,
     "text": "The always character has been known since Exodus 34, 67, but Jesus would still have to go through the test."
   },
   {
+    "id": "7f77eef22d5d",
     "start": 3756,
     "end": 3768,
     "text": "This plan, made before time began, is how God would reveal who He is to us. God loves you. He has said it in His Word, and He has shown it in His actions."
   },
   {
+    "id": "fb8d17d666ae",
     "start": 3769,
     "end": 3776,
     "text": "He has passed the test to show that nothing will separate Him from joining us, even when He knows it's coming."
   },
   {
+    "id": "5bb883dde8ab",
     "start": 3778,
     "end": 3786,
     "text": "Then the outpouring of blessings given by God's oath on the heel of the test is worth reading a few times."
   },
   {
+    "id": "b17adc469f28",
     "start": 3786,
     "end": 3795,
     "text": "Genesis 22, 16 through 18, Yahweh's oath, Shava, that's the conclusion of Melody 7, the Shava."
   },
   {
+    "id": "202962dc4a29",
     "start": 3796,
     "end": 3822,
     "text": "I swear an oath, Shava, by myself, utterance of Yahweh, want to counter the fact that you did this thing, that you did not withhold your Son, your only one, that I will certainly bless you, and I will certainly multiply your seed like the stars of the sky and like the sand upon the edge of the seas, and your seed will inherit the gate of their enemies."
   },
   {
+    "id": "35723dd6c10f",
     "start": 3822,
     "end": 3830,
     "text": "And all the nations of the land will find blessing in your seed on the heel of the fact that you listen to my voice."
   },
   {
+    "id": "23c7f81502b7",
     "start": 3832,
     "end": 3836,
     "text": "Let's read it again, all the nations will find blessing in your seed."
   },
   {
+    "id": "423bb3fcba4f",
     "start": 3836,
     "end": 3843,
     "text": "The author wants you to remember Genesis 315 by mentioning the words heel and future seed so close together."
   },
   {
+    "id": "690ff7085660",
     "start": 3844,
     "end": 3847,
     "text": "Two words are more than enough to see this connection."
   },
   {
+    "id": "dbd06dd9e9f3",
     "start": 3848,
     "end": 3859,
     "text": "And I will set hostility between you and the woman, and between your seed and her seed, he will strike your head, and you will strike his heel."
   },
   {
+    "id": "e3fc08a25a46",
     "start": 3860,
     "end": 3866,
     "text": "However, the people would have to wait a long time until God repeats these specific notes."
   },
   {
+    "id": "07a3699f7bbe",
     "start": 3866,
     "end": 3873,
     "text": "The Genesis melody won't fail, but it does require waiting patiently for God's perfect timing."
   },
   {
+    "id": "f7717c49fd49",
     "start": 3876,
     "end": 3889,
     "text": "Seeing the melody in the New Test of Us We'll briefly pause our review of Genesis, and consider the Genesis melody as it plays out in the gospel according to Luke."
   },
   {
+    "id": "1a0472a0ab9b",
     "start": 3889,
     "end": 3892,
     "text": "You probably know that cycle of the melody well."
   },
   {
+    "id": "58fef88ec2bf",
     "start": 3893,
     "end": 3907,
     "text": "In Luke, the story opens with God's spirit creating life in two impossible places of non-life, a barren womb long past child bearing, and one that had never known a man."
   },
   {
+    "id": "6719d90dcbc7",
     "start": 3908,
     "end": 3918,
     "text": "Luke starts not just with the birth of Jesus to the Virgin Mary, but with the inner woven story of John the Baptist birth to Zachariah and Elizabeth."
   },
   {
+    "id": "34d225f2a17b",
     "start": 3919,
     "end": 3924,
     "text": "The author of this story saw that even the names of the parents were significant."
   },
   {
+    "id": "715d6df13e7e",
     "start": 3925,
     "end": 3931,
     "text": "Zachariah from the Hebrew Zachariah means Yahweh remembered, Zachariah."
   },
   {
+    "id": "34ab19c958f0",
     "start": 3931,
     "end": 3936,
     "text": "It's the Zakar word again, the one that means axe on his promise."
   },
   {
+    "id": "b4af2a7ae414",
     "start": 3936,
     "end": 3945,
     "text": "Compare that with Genesis 8.1 Yahweh remembered Zakar Noah or 1929 Yahweh remembered Zakar Abraham."
   },
   {
+    "id": "0bb2504919bd",
     "start": 3946,
     "end": 3952,
     "text": "Elizabeth from the Hebrew Ely Sheva means My Elohim's Oath."
   },
   {
+    "id": "931a9f436dfc",
     "start": 3952,
     "end": 3960,
     "text": "It's that Sheva, Oathward again, compare that with 2216, I swear an oath, a Sheva."
   },
   {
+    "id": "fdf8fdeb3f0e",
     "start": 3961,
     "end": 3969,
     "text": "Zachariah and Elizabeth are set up as clear mirrors of Abraham and Sarah, childless at a good old age."
   },
   {
+    "id": "854175025f93",
     "start": 3969,
     "end": 3975,
     "text": "And if you put their names together, you literally have Yahweh remembered his oath from Genesis 22."
   },
   {
+    "id": "caeb5c8a3972",
     "start": 3976,
     "end": 3978,
     "text": "Okay, I admit I added that last bit."
   },
   {
+    "id": "b8117e12851b",
     "start": 3979,
     "end": 3985,
     "text": "The authors who handed source material over to the Gentile Luke, see Luke 1-1, saw this melody."
   },
   {
+    "id": "33374e1d04d1",
     "start": 3986,
     "end": 3995,
     "text": "They worked with Luke to share the good news about Jesus to all the nations via the same creation notes that echo Genesis."
   },
   {
+    "id": "55440631e6eb",
     "start": 3996,
     "end": 3998,
     "text": "Now appearing in Luke chapters 1 and 2."
   },
   {
+    "id": "46eb2c741d69",
     "start": 3999,
     "end": 4007,
     "text": "Luke's story then has a choice in the wilderness for 40 days at a matching test in Gisemite before the end."
   },
   {
+    "id": "3db94230536f",
     "start": 4008,
     "end": 4015,
     "text": "There is a journey with Jesus just like Abrams' journey with Yahweh and a division with the leaders of Israel, that's putting it lightly."
   },
   {
+    "id": "bdcc10e2695b",
     "start": 4016,
     "end": 4020,
     "text": "Then a replay of the seventh cycle collapse at the cross."
   },
   {
+    "id": "b7be3db503e0",
     "start": 4021,
     "end": 4025,
     "text": "Finally, this is the most important part. What comes after a collapse?"
   },
   {
+    "id": "93c334405271",
     "start": 4027,
     "end": 4034,
     "text": "The author of life allows his own body, his son, to experience collapse. From which God will?"
   },
   {
+    "id": "91b471a085e9",
     "start": 4035,
     "end": 4041,
     "text": "You know exactly what happened last. Next. On the third day, no less. See Genesis 22.4."
   },
   {
+    "id": "3e22b3d18e30",
     "start": 4041,
     "end": 4046,
     "text": "The Genesis melody has been written in Scripture for a thousand years."
   },
   {
+    "id": "fdaab69abfcf",
     "start": 4047,
     "end": 4055,
     "text": "Genesis Jesus surely said many similar things on the road to Emmaus in Luke 24 as he opened the Scriptures to his disciples."
   },
   {
+    "id": "5d39561f3ed9",
     "start": 4056,
     "end": 4065,
     "text": "As for me, when this really sank in, it made me want to be a pattern breaker, join God's story, and be part of the work that He's doing."
   },
   {
+    "id": "d501d1df8db3",
     "start": 4066,
     "end": 4074,
     "text": "I've carefully read, reflected on, and discussed His word. I now see myself within this grand message of hope and love."
   },
   {
+    "id": "5bba360777bb",
     "start": 4074,
     "end": 4083,
     "text": "I've been promised that it is possible to help bring life. I choose to live in right relationship with Yahweh."
   },
   {
+    "id": "02c852b45248",
     "start": 4083,
     "end": 4089,
     "text": "I am part of Abraham's seed, and I want to do my parts in bringing blessing to the nations."
   },
   {
+    "id": "32b0580994ca",
     "start": 4091,
     "end": 4099,
     "text": "Now, how do I do it? How do I receive the Spirit, partner with God, and bring about creation, life, and blessing in my generation?"
   },
   {
+    "id": "3216394f42f3",
     "start": 4099,
     "end": 4107,
     "text": "That sounds complex. But the first step is actually easy. Trust Jesus. Listen to His voice."
   },
   {
+    "id": "bf72ae5ff0a8",
     "start": 4108,
     "end": 4115,
     "text": "No word from the Lord is unimportant. So it's wise to study the New Testament even more diligently than the Old."
   },
   {
+    "id": "0b9ad418ac37",
     "start": 4115,
     "end": 4125,
     "text": "When studying His word, you'll find advice and commands for life, and see the path Jesus laid out for His followers for then and now."
   },
   {
+    "id": "3b2a393b1435",
     "start": 4126,
     "end": 4134,
     "text": "For example, Jesus prayed aloud His plan for us during the last supper, recorded in John 17, 20 through 26."
   },
   {
+    "id": "49d0cb16a3c7",
     "start": 4135,
     "end": 4141,
     "text": "Life is an intentional choice to be united through love with God and His images."
   },
   {
+    "id": "f438bb3fd9ab",
     "start": 4142,
     "end": 4152,
     "text": "Jesus knew that we needed encouragement to avoid the division of relationships. He had seen the Bible's message play out in His generation just like us."
   },
   {
+    "id": "069261020a71",
     "start": 4153,
     "end": 4162,
     "text": "Perfect unity through abiding, men, oh, love between all the images of God with the Father and the Son."
   },
   {
+    "id": "8781e1a5e1ef",
     "start": 4162,
     "end": 4168,
     "text": "Everything else in the Bible is an implementation detail of that simple primary premise."
   },
   {
+    "id": "f4089bb68905",
     "start": 4168,
     "end": 4174,
     "text": "We have to choose unity in Jesus to avoid the characteristic human cycle."
   },
   {
+    "id": "ffb463e28c1a",
     "start": 4175,
     "end": 4179,
     "text": "The plan also reminds me of something we like to say at Bible Project."
   },
   {
+    "id": "2e42db6272cb",
     "start": 4179,
     "end": 4190,
     "text": "We help people experience the Bible as a unified story that leads to Jesus, so that His followers can be united, and contribute to Shalom in the world."
   },
   {
+    "id": "e39797202955",
     "start": 4192,
     "end": 4202,
     "text": "However, when I look at my life, how I use my time, where I invest my given resources, do I make the choice that leads to life with every little choice I make?"
   },
   {
+    "id": "f81b87d9059e",
     "start": 4202,
     "end": 4212,
     "text": "Do I contribute to division and fear collapse? Do I have eyes to see and ears to hear God's melody? What is God clearly going to do next?"
   },
   {
+    "id": "fe01224d6da2",
     "start": 4213,
     "end": 4225,
     "text": "He does not prevent the collapse, even though that seems good in our eyes, but instead he goes through it with us, and there will be a Genesis coming soon after."
   },
   {
+    "id": "68b8e02b3aab",
     "start": 4226,
     "end": 4228,
     "text": "Will we choose to trust God and even this?"
   },
   {
+    "id": "36dbaf5ba5d2",
     "start": 4229,
     "end": 4234,
     "text": "Let the Bible reshape your understanding of the world so that you can no love Him more."
   },
   {
+    "id": "3a30b20580fd",
     "start": 4234,
     "end": 4243,
     "text": "Make a choice to become an image of God who receives to see good, then builds and gives in every part of the melody."
   },
   {
+    "id": "6bc9c66e25c9",
     "start": 4245,
     "end": 4255,
     "text": "Beyond Genesis 22, after the Shathicycle, the melody and Genesis, of course, doesn't end in chapter 22."
   },
   {
+    "id": "b58a5c2c80c3",
     "start": 4255,
     "end": 4268,
     "text": "If you read Matthew 24, 1-14, it's clear Jesus knew the inevitable path of typical human choices across every generation, and He prepared His disciples for what was coming."
   },
   {
+    "id": "55c2a2d221f4",
     "start": 4269,
     "end": 4278,
     "text": "The cycle would not end even with Jesus' resurrection. Something did change that day, but the difference is not what you would see with your eyes."
   },
   {
+    "id": "52fc526131c7",
     "start": 4279,
     "end": 4286,
     "text": "Hearts aren't changed in our world today either, so every generation, including ours, faces the same challenges."
   },
   {
+    "id": "ecf0c721294b",
     "start": 4287,
     "end": 4297,
     "text": "Yahweh, the one who is, has always known the answer, and He has made it known to us through His Son, completing a test for revealing the truth."
   },
   {
+    "id": "4a2b6d2adbf7",
     "start": 4298,
     "end": 4299,
     "text": "God really loves you."
   },
   {
+    "id": "34ad455533d7",
     "start": 4301,
     "end": 4310,
     "text": "After the mountaintop, you should also read chapter 23. It's a wonderfully symbolic story about paying the full price for the land."
   },
   {
+    "id": "13ec7a186426",
     "start": 4310,
     "end": 4321,
     "text": "You can meditate with me about why that's important. How does that square with Yahweh promising to just give the land in Genesis 12, 7, and 17, 8?"
   },
   {
+    "id": "7c034dfcbdfd",
     "start": 4321,
     "end": 4323,
     "text": "Shouldn't we just receive the free gift?"
   },
   {
+    "id": "2bd6a01ba4a1",
     "start": 4325,
     "end": 4332,
     "text": "Interestingly, Abraham, like David later, declines the offer and is steadfast to pay the full price."
   },
   {
+    "id": "4f3c8872d822",
     "start": 4333,
     "end": 4346,
     "text": "They both refuse to make an offering sacrifice that costs them nothing. Do I get it? Not yet. However, I feel like we should consider the story as significant after the 1-22 melody cycles."
   },
   {
+    "id": "d5af8d83d62b",
     "start": 4347,
     "end": 4355,
     "text": "By random thoughts that maybe your group could build off of, both men have messed up pretty badly in their story so far."
   },
   {
+    "id": "c3251af704d0",
     "start": 4356,
     "end": 4360,
     "text": "It seems like a good gesture, a good first step."
   },
   {
+    "id": "7eb6971d0e9d",
     "start": 4362,
     "end": 4369,
     "text": "I'm not sure if money alone will change the human heart though. Jesus didn't really ask for money."
   },
   {
+    "id": "ca011e59a326",
     "start": 4369,
     "end": 4377,
     "text": "I wonder if these stories connect to the woman who bought the perfume, Joseph of Arimathea, Zacchaeus, or Nicodemus."
   },
   {
+    "id": "b3be0b8fa686",
     "start": 4378,
     "end": 4389,
     "text": "I wonder what our world would be like if a billion people woke up tomorrow choosing to pay the full price for our land. I wonder what that world would be."
   },
   {
+    "id": "f0a1fa5c3829",
     "start": 4391,
     "end": 4404,
     "text": "Anyway, the story keeps going after Genesis 23, the 8th melody cycle, 22-20-2518, ends with Abraham's death and the scattering of his various sons."
   },
   {
+    "id": "6430a6001a39",
     "start": 4405,
     "end": 4409,
     "text": "He takes a third wife and has six more sons in chapter 25, oh my."
   },
   {
+    "id": "4cc32a8728c3",
     "start": 4410,
     "end": 4420,
     "text": "From the biblical authors aren't selling happily ever after stories, they're communicating the choices we humans make and how God works through it all, considered Jacob."
   },
   {
+    "id": "5e7606106519",
     "start": 4421,
     "end": 4429,
     "text": "After Abraham is old and complete, Javah, he is gathered to his people in 25-8th."
   },
   {
+    "id": "93cbc19d6bfb",
     "start": 4429,
     "end": 4443,
     "text": "The melody, however, continues generation after generation, with Rivka, Rebecca, and Yitzhak Isaac, then Jacob and Esau, Judah and Joseph, and on into our lives."
   },
   {
+    "id": "3c1a125c62fd",
     "start": 4446,
     "end": 4447,
     "text": "Extra Shiva observations."
   },
   {
+    "id": "a6e3eff7489a",
     "start": 4448,
     "end": 4465,
     "text": "To bring this discussion full circle, let's return to Genesis once more to see evidence that these authors, with the help of the Spirit, already realize the significance of this forward-pointing message and Genesis 21-22."
   },
   {
+    "id": "9e49528523c0",
     "start": 4466,
     "end": 4476,
     "text": "Throughout scripture, the authors regularly highlight the most important concept of a literary unit by using key repeated words, known as lead words."
   },
   {
+    "id": "897dc25a2cbd",
     "start": 4477,
     "end": 4488,
     "text": "In this 7th cycle of the melody, which goes from the voice in the sky bringing life to Hegar and Ishmael through the binding of Isaac, the primary lead word is clearly Shiva."
   },
   {
+    "id": "b7a713e723a2",
     "start": 4489,
     "end": 4498,
     "text": "The same Hebrew letters of Shiva form multiple Hebrew words. Think of it like the English letters for the word lead, which has multiple meetings."
   },
   {
+    "id": "9832af2be750",
     "start": 4499,
     "end": 4505,
     "text": "Lead the way pencil, lead, or leader. The Hebrew word Shiva means seven."
   },
   {
+    "id": "c346de90a635",
     "start": 4506,
     "end": 4514,
     "text": "Oath, and later, completion. Making it a very significant word, perhaps you've noticed the number seven gets used a lot."
   },
   {
+    "id": "4d60ac607264",
     "start": 4515,
     "end": 4524,
     "text": "The Shiva theme is everywhere in this melody cycle. The creation notes open with Hegar and Ishmael at Bear Shiva, the well of seven."
   },
   {
+    "id": "eda3aafe51c4",
     "start": 4525,
     "end": 4531,
     "text": "The middle section with Abhi Mellik takes place at Bear Shiva, centered on a note, a Shiva."
   },
   {
+    "id": "5f0df86f3cd7",
     "start": 4531,
     "end": 4541,
     "text": "Then after the mountain in Mariah, the literary unit ends with Abraham dwelling at Bear Shiva. The start, middle, and end are all at Bear Shiva."
   },
   {
+    "id": "15c977730a58",
     "start": 4542,
     "end": 4546,
     "text": "Everything points to Yahweh's culminating Shiva, is out."
   },
   {
+    "id": "a803ee274fe3",
     "start": 4546,
     "end": 4554,
     "text": "In addition to the location, there are more Shiva words used in Genesis 21-22 than you might guess. The numbers tell the story."
   },
   {
+    "id": "a81002eaf18e",
     "start": 4555,
     "end": 4561,
     "text": "We have a chart of the number of times Shiva appears in each Genesis chapter, and you see a clear spike at Chapter 21."
   },
   {
+    "id": "ad98ecfcffe5",
     "start": 4563,
     "end": 4575,
     "text": "If you focus on only the use of Shiva words in cycles 3-7 with Abraham, it becomes clear that the authors have intentionally marked this round of the melody as the Shiva cycle."
   },
   {
+    "id": "b53b07f7a087",
     "start": 4576,
     "end": 4584,
     "text": "A chart of cycles 3, 4, 5, 6, and 7, where the use of Shiva words in the seven cycle is significantly higher."
   },
   {
+    "id": "afb43d2337ec",
     "start": 4586,
     "end": 4593,
     "text": "By modern standards, the repeated use of Shiva borders on excessive, but that's exactly the point."
   },
   {
+    "id": "ea2487cbac68",
     "start": 4593,
     "end": 4601,
     "text": "Listeners would hear the word as prominent, and realize that this is the seventh or completion."
   },
   {
+    "id": "272229754692",
     "start": 4602,
     "end": 4613,
     "text": "Imagine sitting in the temple courts on Shiva, listening to Simeon read this text. The word Shiva appears ten times within the cycle, with the tenth being Yahweh's Shiva."
   },
   {
+    "id": "97bf62cfb85b",
     "start": 4613,
     "end": 4625,
     "text": "Did Simeon emphasize each one for his ears? Let's look at one example from Genesis 21-28-32, a seemingly insignificant passage."
   },
   {
+    "id": "98783897ce82",
     "start": 4626,
     "end": 4638,
     "text": "An Abraham set up seven Shiva, female lambs of the flock alone. An Abhima likes a Doverham, what are these seven Shiva, female lambs that you have set up alone?"
   },
   {
+    "id": "5d5e6bfffb79",
     "start": 4638,
     "end": 4649,
     "text": "And he said, because the seven Shiva, female lambs, you will take from my hand, so that it will become a witness on my behalf that I dug this well."
   },
   {
+    "id": "fb8aaf83f861",
     "start": 4650,
     "end": 4662,
     "text": "For this reason one calls the place, Bear Shiva, well of seven, because they are the two of them sworn oath, Shiva, and they cut a covenant at Bear Shiva."
   },
   {
+    "id": "090818d6f21f",
     "start": 4663,
     "end": 4668,
     "text": "The authors use extra Shiva words surrounding being a witness, that'll breach."
   },
   {
+    "id": "3b76f5bcaac2",
     "start": 4670,
     "end": 4676,
     "text": "I'll let you judge, did these authors realize this was also the seventh cycle, the melody if you've been counting from the beginning?"
   },
   {
+    "id": "536f60576800",
     "start": 4677,
     "end": 4681,
     "text": "How did they know even then to write the text in this way?"
   },
   {
+    "id": "893a8a68ab73",
     "start": 4682,
     "end": 4688,
     "text": "It is the highly structured word of God given to us by humans working with the Spirit after all."
   },
   {
+    "id": "9b7fdb487632",
     "start": 4689,
     "end": 4694,
     "text": "The seventh culminating oath cycle points to Jesus like none other."
   },
   {
+    "id": "14af29d33a61",
     "start": 4694,
     "end": 4700,
     "text": "I'm beginning to believe, Luke 24, that this whole story is about him."
   },
   {
+    "id": "12c6ad9f65c9",
     "start": 4702,
     "end": 4703,
     "text": "Your next steps."
   },
   {
+    "id": "6b4254185517",
     "start": 4704,
     "end": 4713,
     "text": "To learn more about the melody, if you can find a group of people that like to read the Bible, don't passively read anything from us, go do it!"
   },
   {
+    "id": "ae25f948e641",
     "start": 4713,
     "end": 4717,
     "text": "Read directly from God what the Spirit has breathed."
   },
   {
+    "id": "8de6609417ae",
     "start": 4717,
     "end": 4727,
     "text": "Grab a friend, sit down with your family or work with a small group, to read Genesis 1 through 23 again, listening for the melody, woven throughout these narratives."
   },
   {
+    "id": "0b416749182b",
     "start": 4728,
     "end": 4730,
     "text": "Use any translation you like."
   },
   {
+    "id": "510bf051c175",
     "start": 4730,
     "end": 4734,
     "text": "For my group, we use the Bible Project Classroom translations."
   },
   {
+    "id": "e9bbc1de5b29",
     "start": 4734,
     "end": 4741,
     "text": "They are a colorful, hyper-literal translation that help us see the structure behind the wisdom of God."
   },
   {
+    "id": "8329544d7388",
     "start": 4743,
     "end": 4748,
     "text": "In the past, we've used a website I made, which links those classroom translations."
   },
   {
+    "id": "b6152d381aba",
     "start": 4749,
     "end": 4755,
     "text": "However, today, these are available in a new, beautiful format, right, within the Bible Project app."
   },
   {
+    "id": "3a1ba21e61c8",
     "start": 4755,
     "end": 4760,
     "text": "We hope that you and your group can delight in using it inside you."
   },
   {
+    "id": "2629fafe978b",
     "start": 4760,
     "end": 4771,
     "text": "If you do find yourself in a situation where you don't have people around you today that you can read the Bible with, then spend time watching and learning from the Genesis Classroom courses."
   },
   {
+    "id": "d6857e5dd193",
     "start": 4772,
     "end": 4779,
     "text": "Start at the beginning with Heaven and Earth, and make sure you get all the way to Jacob. Then re-read this guide."
   },
   {
+    "id": "d756d45c3812",
     "start": 4779,
     "end": 4782,
     "text": "They will change the way you read the rest of the story."
   },
   {
+    "id": "4b43d18848db",
     "start": 4782,
     "end": 4789,
     "text": "Just visit BibleProject.com slash classroom on the website or use the mobile app."
   },
   {
+    "id": "f60f9a5c59a6",
     "start": 4790,
     "end": 4795,
     "text": "Have fun following them love with these amazing and sometimes challenging texts."
   },
   {
+    "id": "db64f4afc079",
     "start": 4796,
     "end": 4805,
     "text": "When you approach the rest of the Hebrew Bible and the New Testament, what you get out of it depends a lot on your reading skills that you have developed."
   },
   {
+    "id": "96c0bc97d67d",
     "start": 4805,
     "end": 4810,
     "text": "Becoming a better community of receivers takes work, but it's worth it."
   },
   {
+    "id": "996b98664519",
     "start": 4811,
     "end": 4819,
     "text": "We all learn differently, but establish a foundation with the Bible's introduction, and it will help so many stories lock into place."
   },
   {
+    "id": "c1b4da6d0dd9",
     "start": 4820,
     "end": 4830,
     "text": "For example, when you read in John 20-22 that Jesus breathed on them, you'll see even more. Why did he breathe on them? That's weird, right?"
   },
   {
+    "id": "695126e9abdd",
     "start": 4830,
     "end": 4850,
     "text": "Nope. Jesus knows the Genesis melody. He is symbolically replaying creation and empowering them to live it out. His Rua will be with the remnant as they partner with Him to bring about creation, life, and blessing to the next generation."
   },
   {
+    "id": "758060599091",
     "start": 4851,
     "end": 4858,
     "text": "By spending time meditating on the Bible's introduction, we've already begun to know love Him more."
   },
   {
+    "id": "f6d05a4283c7",
     "start": 4858,
     "end": 4868,
     "text": "Of course, real change comes when you personally partner with God and live it out by loving your neighbor, the image of God sitting right next to you."
   },
   {
+    "id": "b83ad1275c59",
     "start": 4869,
     "end": 4875,
     "text": "This is the test we all know is coming. What would reveal in you that is already present?"
   },
   {
+    "id": "55c29ed02351",
     "start": 4877,
     "end": 4888,
     "text": "Closing thoughts, a short farewell prayer, as the thief sat on the cross, Jesus, remember us when you come into your kingdom."
   },
   {
+    "id": "21bf91c915cf",
     "start": 4889,
     "end": 4893,
     "text": "We choose to follow you. Let's do it again."
