@@ -231,6 +231,13 @@ main.gm-reading-active .gm-reading * {
   height: auto !important;
 }
 
+/* Breathing room between an image and the section heading right after it */
+.gdoc-content p:has(> img) + h1,
+.gdoc-content p:has(> img) + h2,
+.gdoc-content p:has(> img) + h3 {
+  margin-top: 32px;
+}
+
 /* Scripture cards — wrapping div injected by JS */
 .scripture-block {
   background: white;

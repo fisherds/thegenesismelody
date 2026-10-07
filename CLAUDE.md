@@ -22,6 +22,7 @@ public/                      ← deployed as-is (firebase.json "public": "public
 src/                         ← not deployed: sentence data + sync scripts
   TheGenesisMelody_sentences.json ← sentence list {id, start, end, text}; hub between text, audio and HTML
   TheGenesisMelody_words.json     ← Whisper word timestamps (regenerated from each new recording)
+  build_sentences.py              ← step 1: gdoc web export → sentences.json (reuses old ids; writes build_sentences_report.csv)
   sentence_id_generation.py       ← one-time script that added data-sentence-id to gm-cue spans
   CLAUDE.md                       ← notes on the sentence-ID system
 ```
@@ -36,7 +37,7 @@ src/                         ← not deployed: sentence data + sync scripts
 - Google-Docs CSS classes (`c20`, `c45`, …). Don't rename them. Scripture passages are wrapped into `.scripture-block` cards by JS at load. Some tables (melody cycles) are real `<table>`s from the export.
 - Headings carry clean slug IDs (`#summary`, `#structure`, …) used by the sidebar TOC.
 - **Audio sync:** each sentence is a `<span class="gm-cue" data-sentence-id="…" data-t-start="…" data-t-end="…">` (seconds). Some block elements also carry `data-t-start/end`. `GM_SECTIONS` (inline `<script>`) holds per-section `start_at` times for nav jumps.
-- A disclaimer modal at the top currently says "the text on this page is not the latest. The PDF is the latest."
+- A disclaimer modal at the top currently says "Note: the text on the page is being updated to match the PDF. The audio will be re-recorded soon too." Remove that line once the new audio and timings are live.
 
 ## Update workflow (branch `calling-update-and-ids`, Oct 2026)
 
