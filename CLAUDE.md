@@ -25,6 +25,9 @@ src/                         ← not deployed: sentence data + sync scripts
   build_sentences.py              ← step 1: gdoc web export → sentences.json (reuses old ids; writes build_sentences_report.csv)
   make_words.py                   ← step 3: Whisper (turbo, word_timestamps) → TheGenesisMelody_words.json
   requirements.txt                ← Python deps for make_words.py; venv lives in src/.venv (git-ignored, Python 3.13)
+  align_sentences.py              ← step 4: words.json → start/end in sentences.json (writes align_report.csv)
+  apply_timings.py                ← step 5: sentences.json → data-t-* on gm-cue spans + GM_SECTIONS
+  check_page.py                   ← verifies index.html gm-cues == sentences.json (ids, order, text)
   sentence_id_generation.py       ← one-time script that added data-sentence-id to gm-cue spans
   CLAUDE.md                       ← notes on the sentence-ID system
 ```
@@ -39,7 +42,7 @@ src/                         ← not deployed: sentence data + sync scripts
 - Google-Docs CSS classes (`c20`, `c45`, …). Don't rename them. Scripture passages are wrapped into `.scripture-block` cards by JS at load. Some tables (melody cycles) are real `<table>`s from the export.
 - Headings carry clean slug IDs (`#summary`, `#structure`, …) used by the sidebar TOC.
 - **Audio sync:** each sentence is a `<span class="gm-cue" data-sentence-id="…" data-t-start="…" data-t-end="…">` (seconds). Some block elements also carry `data-t-start/end`. `GM_SECTIONS` (inline `<script>`) holds per-section `start_at` times for nav jumps.
-- A disclaimer modal at the top currently says "Note: the text on the page is being updated to match the PDF. The audio will be re-recorded soon too." Remove that line once the new audio and timings are live.
+- A disclaimer modal on page load says the site is not from BibleProject. Pressing "j" while it is open is an easter egg (it opens "What's This?" from The Nightmare Before Christmas).
 
 ## Update workflow (branch `calling-update-and-ids`, Oct 2026)
 
@@ -48,12 +51,14 @@ src/                         ← not deployed: sentence data + sync scripts
 1. **Text → sentences.json.** Rebuild `src/TheGenesisMelody_sentences.json` from the Google Doc web export. Every sentence gets an `id`. Reuse an existing `id` when a sentence is unchanged or nearly unchanged. `start`/`end` are placeholders until there is new audio. This step does **not** touch index.html.
 2. **sentences.json → index.html**, one section at a time. Update the text and images and wrap each sentence in a `gm-cue` span carrying its `data-sentence-id`.
 3. **New audio → words.json.** Run `src/.venv/bin/python src/make_words.py` (setup is in `src/requirements.txt`; it needs ffmpeg). This takes about 20–60 minutes for the roughly 2-hour recording. The raw recording (WAV) stays outside the repo, and only `public/audio/TheGenesisMelody.m4a` (Git LFS) is committed.
-4. **words.json → sentences.json timings.** Align the words to the sentence text and fill in `start`/`end`.
-5. **sentences.json → index.html timings.** A script (`sentence_id_updates.py`, still to be written) copies `start`/`end` onto `data-t-start`/`data-t-end` by matching `data-sentence-id`. It also updates `GM_SECTIONS`.
+4. **words.json → sentences.json timings.** Run `python3 src/align_sentences.py`. It lines up the Whisper words with the sentence text using a diff. Each sentence gets the time span of its matched words. Stray matches far from the rest are ignored, and unmatched sentences between two timed ones are filled from their neighbors. Review the results in `src/align_report.csv` (look at the LOW / NONE / FILLED flags).
+5. **sentences.json → index.html timings.** Run `python3 src/apply_timings.py`. It sets `data-t-start`/`data-t-end` on every `gm-cue` by `data-sentence-id`, removes stale `data-t-*` from other elements, and updates the `GM_SECTIONS` jump points from each heading’s first timed cue.
 
 The author makes all git commits, pushes and PRs (with GitHub Desktop). Claude only edits files.
 
-**Progress:** step 2 is complete (2026-10-08). All 1,015 sentences in `sentences.json` are on the page, in order, one `gm-cue` each. Next is step 3: re-record the audio, add the Whisper script to the repo, and generate `TheGenesisMelody_words.json`. After that come steps 4–5: write the timing scripts and update `GM_SECTIONS`.
+The developer-facing update steps are in README.md ("Updating the guide").
+
+**Progress:** steps 1–5 are complete for the October 2026 recording (2026-10-08). 1,010 of 1,014 sentences are timed; the 4 untimed ones are collapse-table verse references that aren’t read aloud. **After any re-recording:** run make_words → align_sentences → apply_timings. **After a text edit:** re-export → build_sentences → update index.html → align_sentences → apply_timings. Whisper doesn’t need to be rerun.
 
 How to do a section:
 - **Text, bold, color and links** come from the export.
