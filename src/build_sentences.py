@@ -123,8 +123,9 @@ def clean(text: str) -> str:
 # ---------------------------------------------------------------------------
 
 # Split after . ! ? or … (plus any closing quotes/brackets) when followed by
-# whitespace and something that starts a new sentence.
-SPLIT_RE = re.compile(r"(?<=[.!?…])[\"”’')\]]*\s+(?=[A-Z“\"‘'(\[0-9])")
+# whitespace and something that starts a new sentence. An opening ( or [ does not
+# start a new sentence: “Get yourself going…” (lekh lekha) stays together.
+SPLIT_RE = re.compile(r"(?<=[.!?…])[\"”’')\]]*\s+(?=[A-Z“\"‘'0-9])")
 
 
 def split_sentences(text: str) -> list:
@@ -222,10 +223,14 @@ def row_to_sentences(row: list) -> list:
 
     sentences = []
     if ncols >= 4:
-        # Course tiles row (Heaven and Earth, Adam to Noah, ...): one entry
-        return [", ".join(t for c in sorted(cols) for t in cols[c])]
+        # Course tiles row (Heaven and Earth, Adam to Noah, ...): one sentence per
+        # caption, so each course name highlights in turn as it's read
+        return [t for c in sorted(cols) for t in cols[c]]
     if ncols >= 3:
-        label = ", ".join(" ".join(cols.get(c, [])) for c in range(ncols - 1) if cols.get(c))
+        # Name cell and Chapters cell are separate sentences, since a highlight
+        # span can't cross table cells ("Melody Cycle 1 Creation", "Genesis 1:1 - 2:3 plus 2:4-15")
+        sentences.extend(" ".join(cols[c]) for c in range(ncols - 1) if cols.get(c))
+        label = ""
         notes = cols.get(ncols - 1, [])
     elif ncols == 2:
         label = first

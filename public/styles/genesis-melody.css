@@ -139,9 +139,10 @@ html {
   background: white;
   padding: 40px 60px 80px;
   max-width: 860px;
+  min-width: 0; /* let this flex item shrink below its widest table/image on phones */
   margin-left: auto;
   margin-right: auto;
-} 
+}
 
 /* Google Doc content overrides */
 
@@ -219,16 +220,64 @@ main.gm-reading-active .gm-reading * {
   color: rgba(0,0,0,0.87) !important;
 }
 
+/* Tables stay inside the text column and are centered. Google Docs gives some
+   tables a negative margin-left (its table indent), which pushed them left of
+   the text, so margins are overridden here. */
 .gdoc-content table {
-  display: block;
+  margin: 16px auto !important;
+  border-collapse: collapse;
+  max-width: 100%;
+}
+
+/* Melody tables fill the column; the extra width goes to the notes column,
+   since it has the largest width from the doc. The course tiles table keeps its
+   natural size. */
+.gdoc-content table:not(.gm-course-tiles) {
   width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
 }
 
 .gdoc-content img {
   max-width: 100%;
   height: auto !important;
+}
+
+/* Google Docs wraps images in spans with fixed pixel sizes; let them shrink */
+.gdoc-content span:has(> img) {
+  max-width: 100%;
+  height: auto !important;
+}
+
+/* Red emphasis used in the Google Doc (#cc0000), e.g. "division of relationships" */
+.gm-red {
+  color: #cc0000;
+}
+
+/* Green emphasis used in the Google Doc (#38761d), e.g. "receive their calling" */
+.gm-green {
+  color: #38761d;
+}
+
+/* Light highlight backgrounds from the Google Doc palette (e.g. Gen 4:1 vs 4:25) */
+.gm-hl-pink  { background-color: #f4cccc; }
+.gm-hl-green { background-color: #d9ead3; }
+.gm-hl-blue  { background-color: #c9daf8; }
+.gm-hl-yellow { background-color: #fff2cc; }
+
+/* Gray italic line markers from the Google Doc, e.g. "[1]" in the Genesis 22 oath */
+.gm-gray {
+  color: #999999;
+  font-style: italic;
+}
+
+/* Underline emphasis from the Google Doc (e.g. "eat" vs "builds" pairing) */
+.gm-underline {
+  text-decoration: underline;
+}
+
+/* Breathing room above and below images in the article body (not table cells) */
+.gdoc-content > p:has(> img) {
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 /* Breathing room between an image and the section heading right after it */
@@ -476,4 +525,25 @@ main.gm-reading-active .gm-reading * {
   .gdoc-content {
     zoom: 1;
   }
+
+  /* Google Docs' fixed cell widths (in pt) are wider than a phone; let the
+     cells size to the screen instead so tables don't widen the page */
+  .gdoc-content td {
+    width: auto !important;
+  }
+
+  /* Five course tiles share the screen width evenly */
+  .gdoc-content table.gm-course-tiles {
+    width: 100%;
+    table-layout: fixed;
+  }
+  .gm-course-tiles span:has(> img),
+  .gm-course-tiles img {
+    width: 100% !important;
+  }
+}
+
+/* Dark red quoted words of Jesus from the Google Doc (#990000), e.g. Luke 24:44-47 */
+.gm-dark-red {
+  color: #990000;
 }

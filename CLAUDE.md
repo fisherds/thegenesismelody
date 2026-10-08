@@ -51,6 +51,16 @@ src/                         ← not deployed: sentence data + sync scripts
 
 The author makes all git commits, pushes and PRs (with GitHub Desktop). Claude only edits files.
 
+**Progress:** step 2 is complete (2026-10-08). All 1,015 sentences in `sentences.json` are on the page, in order, one `gm-cue` each. Next is step 3: re-record the audio, add the Whisper script to the repo, and generate `TheGenesisMelody_words.json`. After that come steps 4–5: write the timing scripts and update `GM_SECTIONS`.
+
+How to do a section:
+- **Text, bold, color and links** come from the export.
+- **Scripture lines** keep the page's existing markup. Each line gets its own `gm-cue`.
+- **Melody table rows** have one cue for the Name cell and one for the Chapters cell.
+- **New images** go into `public/images/` as WebP at about 900–1200px. The four circle diagrams are SVG.
+- **Timings:** a sentence whose text is unchanged keeps its old `data-t-*`. Changed or new sentences get `-1`.
+- **Manual edits:** `sentences.json` has hand edits made after the export (wording fixes the author also made in the doc). Don't rerun `build_sentences.py` on the old export folder. Get a fresh export first.
+
 Status: `origin/sentence-ids` was merged into this branch on 2026-10-07. That brought in the 429 IDs in the HTML and removed the old sync tooling and `PLAN_OF_ATTACK.md`. The HTML↔JSON link is only partial: 227 of the 429 HTML IDs have no entry in `sentences.json`, and 378 of the 580 JSON sentences aren't on the page. Step 1 replaces all of this anyway.
 
 ## October 2026 update: PDF vs. site
