@@ -6,7 +6,7 @@ Rebuilds src/TheGenesisMelody_sentences.json from a Google Doc
 "Web page (.html, zipped)" export. Does NOT touch public/index.html.
 
 Usage:
-    python3 src/build_sentences.py "src/The Genesis Melody Export Webpage/TheGenesisMelody.html"
+    python3 src/build_sentences.py "src/gdoc-export/The Genesis Melody/TheGenesisMelody.html"
 
 What it does:
 1. Walks the export in document order and turns it into sentences:
@@ -135,15 +135,20 @@ def split_sentences(text: str) -> list:
         # Don't split after "i.e." / "e.g."
         if re.search(r"\b(i\.e|e\.g)\.$", piece):
             continue
+        # Don't split inside parentheses: "(Take a pause… selah. Perfect Father Son alignment)"
+        if piece.count("(") > piece.count(")"):
+            continue
         parts.append(piece)
         start = m.end()
     tail = text[start:].strip()
     if tail:
         parts.append(tail)
-    # re-glue any pieces that were held back by the i.e./e.g. rule
+    # re-glue any pieces that were held back by the i.e./e.g. rule, and keep a
+    # repeated call together: “Avraham! Avraham!”
     out = []
+    word = lambda s: re.sub(r"\W", "", s).lower()
     for p in parts:
-        if out and re.search(r"\b(i\.e|e\.g)\.$", out[-1]):
+        if out and (re.search(r"\b(i\.e|e\.g)\.$", out[-1]) or word(p) == word(out[-1])):
             out[-1] += " " + p
         else:
             out.append(p)

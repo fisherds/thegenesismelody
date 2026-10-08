@@ -5,7 +5,7 @@ Static website (Firebase Hosting → https://thegenesismelody.web.app) presentin
 ## Source of truth
 
 - **Master text = a Google Doc.** The author edits there, then exports `public/The Genesis Melody.pdf`.
-- **Use a Google Doc "Web page (.html, zipped)" export** (temporary folder, deleted after use) or the PDF as the reference when updating the site. For the PDF: `pdftotext -layout "public/The Genesis Melody.pdf" out.txt`, plus `pdfimages -list` / `pdfimages -png` for images.
+- **Use the Google Doc "Web page (.html, zipped)" export** as the reference when updating the site. Unzip it into `src/gdoc-export/` (git-ignored), which gives `src/gdoc-export/The Genesis Melody/TheGenesisMelody.html` plus `images/`. The PDF also works: For the PDF: `pdftotext -layout "public/The Genesis Melody.pdf" out.txt`, plus `pdfimages -list` / `pdfimages -png` for images.
 - `public/index.html` is the display layer. It started as a Google Docs HTML export and has been hand-maintained since.
 
 ## Layout
@@ -15,7 +15,7 @@ public/                      ← deployed as-is (firebase.json "public": "public
   index.html                 ← the whole article: text, TOC sidebar, audio player, inline GM_SECTIONS script
   The Genesis Melody.pdf     ← downloadable PDF, linked from the page (~50 MB)
   audio/TheGenesisMelody.m4a ← full narration (~80 MB); audio_guide_gen*.m4a are separate older guides
-  images/                    ← imageN.png from the gdoc export, plus chart1/chart2
+  images/                    ← paintings as .webp, diagrams/charts as .svg (named by content)
   scripts/audio-highlight.js ← sentence read-along highlighting (gm-cue spans)
   styles/genesis-melody*.css
   reader.html, jacob.html    ← separate older pages (Classroom-translation reader)
@@ -59,7 +59,7 @@ How to do a section:
 - **Melody table rows** have one cue for the Name cell and one for the Chapters cell.
 - **New images** go into `public/images/` as WebP at about 900–1200px. The four circle diagrams are SVG.
 - **Timings:** a sentence whose text is unchanged keeps its old `data-t-*`. Changed or new sentences get `-1`.
-- **Manual edits:** `sentences.json` has hand edits made after the export (wording fixes the author also made in the doc). Don't rerun `build_sentences.py` on the old export folder. Get a fresh export first.
+- **Manual edits:** small fixes to `sentences.json` get mirrored in the doc. To check that the doc and the page still agree, re-export into `src/gdoc-export/` and run `python3 src/build_sentences.py "src/gdoc-export/The Genesis Melody/TheGenesisMelody.html"`, then read the git diff of `sentences.json`. Any change it shows is a place where the doc and the page differ.
 
 Status: `origin/sentence-ids` was merged into this branch on 2026-10-07. That brought in the 429 IDs in the HTML and removed the old sync tooling and `PLAN_OF_ATTACK.md`. The HTML↔JSON link is only partial: 227 of the 429 HTML IDs have no entry in `sentences.json`, and 378 of the 580 JSON sentences aren't on the page. Step 1 replaces all of this anyway.
 
