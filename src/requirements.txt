@@ -1,0 +1,6 @@
+# Python packages for src/make_words.py (Whisper word timestamps).
+# Setup (Python 3.13; PyTorch doesn't support 3.14 yet):
+#   python3.13 -m venv src/.venv
+#   src/.venv/bin/pip install -r src/requirements.txt
+# Also needs ffmpeg on the PATH: brew install ffmpeg
+openai-whisper

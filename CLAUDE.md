@@ -23,6 +23,8 @@ src/                         ← not deployed: sentence data + sync scripts
   TheGenesisMelody_sentences.json ← sentence list {id, start, end, text}; hub between text, audio and HTML
   TheGenesisMelody_words.json     ← Whisper word timestamps (regenerated from each new recording)
   build_sentences.py              ← step 1: gdoc web export → sentences.json (reuses old ids; writes build_sentences_report.csv)
+  make_words.py                   ← step 3: Whisper (turbo, word_timestamps) → TheGenesisMelody_words.json
+  requirements.txt                ← Python deps for make_words.py; venv lives in src/.venv (git-ignored, Python 3.13)
   sentence_id_generation.py       ← one-time script that added data-sentence-id to gm-cue spans
   CLAUDE.md                       ← notes on the sentence-ID system
 ```
@@ -45,7 +47,7 @@ src/                         ← not deployed: sentence data + sync scripts
 
 1. **Text → sentences.json.** Rebuild `src/TheGenesisMelody_sentences.json` from the Google Doc web export. Every sentence gets an `id`. Reuse an existing `id` when a sentence is unchanged or nearly unchanged. `start`/`end` are placeholders until there is new audio. This step does **not** touch index.html.
 2. **sentences.json → index.html**, one section at a time. Update the text and images and wrap each sentence in a `gm-cue` span carrying its `data-sentence-id`.
-3. **New audio → words.json.** The author re-records and runs Whisper, which produces a new `TheGenesisMelody_words.json`.
+3. **New audio → words.json.** Run `src/.venv/bin/python src/make_words.py` (setup is in `src/requirements.txt`; it needs ffmpeg). This takes about 20–60 minutes for the roughly 2-hour recording. The raw recording (WAV) stays outside the repo, and only `public/audio/TheGenesisMelody.m4a` (Git LFS) is committed.
 4. **words.json → sentences.json timings.** Align the words to the sentence text and fill in `start`/`end`.
 5. **sentences.json → index.html timings.** A script (`sentence_id_updates.py`, still to be written) copies `start`/`end` onto `data-t-start`/`data-t-end` by matching `data-sentence-id`. It also updates `GM_SECTIONS`.
 
