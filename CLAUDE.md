@@ -5,7 +5,7 @@ Static website (Firebase Hosting → https://thegenesismelody.web.app) presentin
 ## Source of truth
 
 - **Master text = a Google Doc.** The author edits there, then exports `public/The Genesis Melody.pdf`.
-- **Use the PDF** as the reference when updating the site (`pdftotext -layout "public/The Genesis Melody.pdf" out.txt`; `pdfimages -list` / `pdfimages -png` for images). `src/The Genesis Melody.txt` is **stale** (May 2026). Don't trust it over the PDF.
+- **Use the Google Doc "Web page (.html, zipped)" export** as the reference when updating the site. Unzip it into `src/gdoc-export/` (git-ignored), which gives `src/gdoc-export/The Genesis Melody/TheGenesisMelody.html` plus `images/`. The PDF also works: For the PDF: `pdftotext -layout "public/The Genesis Melody.pdf" out.txt`, plus `pdfimages -list` / `pdfimages -png` for images.
 - `public/index.html` is the display layer. It started as a Google Docs HTML export and has been hand-maintained since.
 
 ## Layout
@@ -15,15 +15,16 @@ public/                      ← deployed as-is (firebase.json "public": "public
   index.html                 ← the whole article: text, TOC sidebar, audio player, inline GM_SECTIONS script
   The Genesis Melody.pdf     ← downloadable PDF, linked from the page (~50 MB)
   audio/TheGenesisMelody.m4a ← full narration (~80 MB); audio_guide_gen*.m4a are separate older guides
-  images/                    ← imageN.png from the gdoc export, plus chart1/chart2
+  images/                    ← paintings as .webp, diagrams/charts as .svg (named by content)
   scripts/audio-highlight.js ← sentence read-along highlighting (gm-cue spans)
   styles/genesis-melody*.css
   reader.html, jacob.html    ← separate older pages (Classroom-translation reader)
-src/                         ← not deployed: sync tooling + Whisper data
-  TheGenesisMelody_sentences.json / _words.json ← Whisper output for the May 2026 recording
-  resync.py, resync_map.csv, sync-check.py, ... ← one-off sync tools from earlier rounds
-  CLAUDE.md                  ← older notes on the gdoc→HTML sync workflow (partly outdated)
-PLAN_OF_ATTACK.md            ← May 2026 plan for audio re-sync + word highlighting (never finished)
+src/                         ← not deployed: sentence data + sync scripts
+  TheGenesisMelody_sentences.json ← sentence list {id, start, end, text}; hub between text, audio and HTML
+  TheGenesisMelody_words.json     ← Whisper word timestamps (regenerated from each new recording)
+  build_sentences.py              ← step 1: gdoc web export → sentences.json (reuses old ids; writes build_sentences_report.csv)
+  sentence_id_generation.py       ← one-time script that added data-sentence-id to gm-cue spans
+  CLAUDE.md                       ← notes on the sentence-ID system
 ```
 
 ## Running / deploying
@@ -35,14 +36,32 @@ PLAN_OF_ATTACK.md            ← May 2026 plan for audio re-sync + word highligh
 
 - Google-Docs CSS classes (`c20`, `c45`, …). Don't rename them. Scripture passages are wrapped into `.scripture-block` cards by JS at load. Some tables (melody cycles) are real `<table>`s from the export.
 - Headings carry clean slug IDs (`#summary`, `#structure`, …) used by the sidebar TOC.
-- **Audio sync:** each sentence is a `<span class="gm-cue" data-t-start="…" data-t-end="…">` (seconds). Some block elements also carry `data-t-start/end`. `GM_SECTIONS` (inline `<script>`) holds per-section `start_at` times for nav jumps.
-- A disclaimer modal at the top currently says "the text on this page is not the latest. The PDF is the latest."
+- **Audio sync:** each sentence is a `<span class="gm-cue" data-sentence-id="…" data-t-start="…" data-t-end="…">` (seconds). Some block elements also carry `data-t-start/end`. `GM_SECTIONS` (inline `<script>`) holds per-section `start_at` times for nav jumps.
+- A disclaimer modal at the top currently says "Note: the text on the page is being updated to match the PDF. The audio will be re-recorded soon too." Remove that line once the new audio and timings are live.
 
-## Branch status (as of 2026-10-07)
+## Update workflow (branch `calling-update-and-ids`, Oct 2026)
 
-- `origin/sentence-ids` was **never merged**. It adds a stable `data-sentence-id` to all 429 `gm-cue` spans (`src/sentence_id_generation.py`), adds `id`s to `sentences.json`, re-times about the first part of the page to the May recording, and deletes the old sync files. The whole approach is tied to the May recording.
-- `origin/native-audio-controls` was **never merged** either (May 2026). It's an experiment that swaps the custom player for native `<audio>` controls.
-- `PLAN_OF_ATTACK.md` phases 0–1 happened on main. Phase 2+ (section-by-section re-timing, word highlighting) was only started on `sentence-ids`.
+`sentences.json` is the hub, and each step is decoupled from the others:
+
+1. **Text → sentences.json.** Rebuild `src/TheGenesisMelody_sentences.json` from the Google Doc web export. Every sentence gets an `id`. Reuse an existing `id` when a sentence is unchanged or nearly unchanged. `start`/`end` are placeholders until there is new audio. This step does **not** touch index.html.
+2. **sentences.json → index.html**, one section at a time. Update the text and images and wrap each sentence in a `gm-cue` span carrying its `data-sentence-id`.
+3. **New audio → words.json.** The author re-records and runs Whisper, which produces a new `TheGenesisMelody_words.json`.
+4. **words.json → sentences.json timings.** Align the words to the sentence text and fill in `start`/`end`.
+5. **sentences.json → index.html timings.** A script (`sentence_id_updates.py`, still to be written) copies `start`/`end` onto `data-t-start`/`data-t-end` by matching `data-sentence-id`. It also updates `GM_SECTIONS`.
+
+The author makes all git commits, pushes and PRs (with GitHub Desktop). Claude only edits files.
+
+**Progress:** step 2 is complete (2026-10-08). All 1,015 sentences in `sentences.json` are on the page, in order, one `gm-cue` each. Next is step 3: re-record the audio, add the Whisper script to the repo, and generate `TheGenesisMelody_words.json`. After that come steps 4–5: write the timing scripts and update `GM_SECTIONS`.
+
+How to do a section:
+- **Text, bold, color and links** come from the export.
+- **Scripture lines** keep the page's existing markup. Each line gets its own `gm-cue`.
+- **Melody table rows** have one cue for the Name cell and one for the Chapters cell.
+- **New images** go into `public/images/` as WebP at about 900–1200px. The four circle diagrams are SVG.
+- **Timings:** a sentence whose text is unchanged keeps its old `data-t-*`. Changed or new sentences get `-1`.
+- **Manual edits:** small fixes to `sentences.json` get mirrored in the doc. To check that the doc and the page still agree, re-export into `src/gdoc-export/` and run `python3 src/build_sentences.py "src/gdoc-export/The Genesis Melody/TheGenesisMelody.html"`, then read the git diff of `sentences.json`. Any change it shows is a place where the doc and the page differ.
+
+Status: `origin/sentence-ids` was merged into this branch on 2026-10-07. That brought in the 429 IDs in the HTML and removed the old sync tooling and `PLAN_OF_ATTACK.md`. The HTML↔JSON link is only partial: 227 of the 429 HTML IDs have no entry in `sentences.json`, and 378 of the 580 JSON sentences aren't on the page. Step 1 replaces all of this anyway.
 
 ## October 2026 update: PDF vs. site
 

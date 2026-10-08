@@ -69,3 +69,7 @@ node_modules/
 .dataconnect
 .DS_Store
 /.claude
+
+# Google Doc "Web page (.html, zipped)" export: input for src/build_sentences.py.
+# Large (~40 MB of PNGs) and one-line HTML, so not tracked. Diff sentences.json instead.
+src/gdoc-export/
